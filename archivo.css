@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap');
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+header{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background-image: url(./multimedia/fondo.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+h1{
+    color: black;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration-style: solid;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+h2{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-align: left;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+ul li{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bolder;  
+}
+.barra li{
+    list-style-type: none;
+    display: inline-block;
+}
+.barra a{
+    text-decoration: none;
+    text-shadow: 1px 1px 5px black;
+    text-transform: capitalize;
+}
+.barra a:hover{
+    color: black;
+}
+h3{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.parrafo1{
+    color: black;
+    background-color: aquamarine;
+    border: 12px solid black;
+    font-size: 20px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+}
+.parrafo2{
+    color: black;
+    background-color: aquamarine;
+    border: 12px solid black;
+    font-size: 20px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+}
+.video1{
+    border: 12px solid blue;
+    padding:0;
+    border-radius: 12px;
+}
+.video2{
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+}
+.imagen1{
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px ;
+}
+.imagen2{
+    border: 12px solid blue;
+    padding:0;
+    border-radius: 12px;
+}
+.imagen3{
+    border: 12px solid blue;
+    padding:0;
+    border-radius: 12px;
+}
+.titulogaleria{
+    text-align: left;
+    text-shadow: 1px 1px 5px red;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: underline;
+    color: black;
+    font-weight: bolder;
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.galeria{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,200px);
+    grid-gap: 20px;
+    min-height: 100vh;
+    padding: 10px;
+}
+.item{
+    width: 100%;
+    background-color: black;
+    border: 10px solid darkblue;
+    filter: grayscale(100%);
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px red;
+}
+.item:hover{
+    transform: scale(1,1);
+    transition: all 0,8s;
+    filter: grayscale(0%);
+}
+.item1{
+    background-image: url(./multimedia/audi\ rojo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item2{
+    background-image: url(./multimedia/audi.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item3{
+    background-image: url(./multimedia/camioneta\ bmw.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item4{
+    background-image: url(./multimedia/corvette.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item5{
+    background-image: url(./multimedia/ferrari\ de\ carrera.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item6{
+    background-image: url(./multimedia/interior\ clase\ c.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item7{
+    background-image: url(./multimedia/interior\ mercedes\ benz.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item8{
+    background-image: url(./multimedia/maserati\ gran\ turismo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item9{
+    background-image: url(./multimedia/mercedes\ azul.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item10{
+    background-image: url(./multimedia/mercedes\ blanco.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item11{
+    background-image: url(./multimedia/porsche\ 911.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item12{
+    background-image: url(./multimedia/rolls\ royce\ blanco.jpg);
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+#Instagram01{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
+#Facebook02{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
+#Whatsapp03{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
+.headerhome{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    font-family: 'Kanit', sans-serif;
+    margin: 15px;
+}
+.titulo1home{
+    color: black;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration-style: solid;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.titulo2home{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+#instagramhome{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
+.facebookhome{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
+.titulo3home{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.whatsapphome{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+.bodyhome{
+    background-image: url(./multimedia/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.footerhome{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+.headerservicios{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    font-family: 'Kanit', sans-serif;
+    margin: 15px;
+}
+.titulo1servicios{
+    color: black;
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration-style: solid;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.parrafo1servicios{
+    color: black;
+    background-color: aquamarine;
+    border: 12px solid black;
+    font-size: 20px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+}
+.h2servicios{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-align: left;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.listaservicios{
+    background-color: aquamarine;
+    color: black;
+    font-size: 20px;
+    padding: 30px;
+    border: 12px solid black;
+    border-radius: 12px;
+    margin: 20px;
+}
+.imagenesservicios{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.cajaservicios{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    margin: 12px;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,200px);
+}
+.caja{
+    border: 12px solid blue;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: black;
+    box-shadow: 1px 1px 5px red;
+    filter: grayscale(100%);
+}
+.caja:hover{
+    transition: all 0.7s;
+    transform: scale(1,1);
+    filter: grayscale(0%);
+}
+.caja1{
+    background-image:url(./multimedia/alineacion\ y\ balanceo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.caja2{
+    background-image: url(./multimedia/Cambiar-filtro-de-aceite.webp);
+    background-position: center;
+    background-size: cover;
+}
+.caja3{
+    background-image: url(./multimedia/neumaticos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.caja4{
+    background-image: url(./multimedia/bateria.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.footerservicios{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+.titulo2servicios{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+#instagramservicios{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal;
+}
+#facebookservicios{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+.titulo3servicios{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+#whatsappservicios{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+.bodyservicios{
+    background-image: url(./multimedia/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto;
+        width: 200px;
+    }
+    .item{
+        width: 140px;
+        height: 140px;
+    }
+    .video1{
+        border: 12px solid blue;
+        padding:0;
+        border-radius: 12px;
+        width: fit-content;
+    }
+    .video2{
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+    width: fit-content;
+    }
+    .imagen1{
+        border: 12px solid blue;
+        padding: 0;
+        border-radius: 12px;
+        width: 300px;
+    }
+    .imagen2{
+        border: 12px solid blue;
+        padding:0;
+        border-radius: 12px;
+        width:300px;
+    }
+    .imagen3{
+        border: 12px solid blue;
+        padding:0;
+        border-radius: 12px;
+        width: 300px;
+    }
+    .ubicacion{
+        width: fit-content;
+    }
+    .cajaservicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 200px;
+    }
+    .headerservicios{
+        width: 210px;
+        height: auto;
+    }
+    .h2servicios{
+        width: 100px;
+        height: auto;
+    }
+    .parrafo1servicios{
+        width: 180px;
+        height: auto;
+    }
+    .listaservicios{
+        width: 200px;
+        height: auto;
+    }
+    .footerservicios{
+        width: 210px;
+        height: auto;
+    }
+    .headerhome{
+        width: 250px;
+        height: auto;
+    }
+    .footerhome{
+        width: 250px;
+        height: auto;
+    }
+}
+form{
+    font-size: 20px;
+    font-family:'Kanit', sans-serif;
+    text-shadow: 1px 1px 5px red;
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 900;
+    text-decoration-color: black;
+}

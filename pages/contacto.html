@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../archivo.css">
+    <title>Contacto</title>
+</head>
+<!--ETIQUETA BODY AQUI DENTRO SE IMPACTA TODO LO QUE SE VA A VER EN EL NAVEGADOR; ES LA PRIMERA ETIQUETA EN ABRIR Y LA ULTIMA EN CERRAR-->
+<body>
+    <!--ETIQUETA SEMANTICA HEADER, ETIQUETA PRINCIPAL QUE EN GENERAL SE UTILIZA PARA CONTENER TODO LO REFERIDO AL ENCABEZADO (NAV, POR EJEMPLO)--> 
+    <header>
+    <h1><strong>Contacto</strong></h1>
+    <nav>
+        <ul type="circle">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./beneficios.html">Beneficios</a></li>
+            <li><a href="./ayuda.html">Ayuda</a></li>
+        </ul>
+    </nav>
+    </header>
+    <h2>Comuniquese con nosotros</h2>
+    <form action="contacto.html" method="post" enctype="text/plain">
+        <label for="nombre">nombre:</label>
+        <input type="text" name="nombre" required placeholder="ingrese su nombre"><br>
+        <label for="apellido">apellido:</label>
+        <input type="text" name="apellido" required placeholder="ingrese su apellido"><br>
+        <label for="telefono">telefono:</label>
+        <input type="text" name="telefono" required placeholder="ingrese su numero"><br>
+        <label for="correo">correo:</label>
+        <input type="email" name="correo" required placeholder="ingrese su correo"><br>
+        <label for="pass">contraseña</label>
+        <input type="password" name="pass" required placeholder="ingrese su contraseña"><br>
+        <label for="file">adjuntar archivo:</label>
+        <input type="file" name="file"><br>
+        <h3>Comentario del usuario</h3>
+        <textarea name="rectangulo" id="" cols="60" rows="10"></textarea>
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="restablecer">
+    </form>
+    <!--ETIQUETA SEMANTICA FOOTER, ETIQUETA PRINCIPAL QUE EN GENERAL SE USA PARA CONTENER TODO LO RELACIONADO AL PIE DE PAGINA, COMO POR EJEMPLO, EL MENU DE REDES SOCIALES-->
+    <footer>
+        <div>
+            <h3>Redes Sociales</h3>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <h4>Contacto telefonico</h4>
+            <p>Whatsapp</p>
+        </div>
+    </footer>
+</body>
+</html>
