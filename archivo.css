@@ -548,3 +548,105 @@ form{
     font-weight: 900;
     text-decoration-color: black;
 }
+.footercontacto{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+#instagramcontacto{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+#facebookcontacto{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+#whatsappcontacto{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+.titulo4contacto{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.footerayuda{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+#instagramayuda{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+#facebookayuda{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+#whatsappayuda{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+.titulo4ayuda{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.footerbeneficios{
+    background-color: aquamarine;
+    color: black;
+    border: 12px solid black;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+}
+#instagrambeneficios{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+#facebookbeneficios{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+#whatsappbeneficios{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-variant: normal; 
+}
+.titulo4beneficios{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
