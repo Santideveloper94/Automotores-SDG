@@ -542,11 +542,11 @@ form{
     font-size: 20px;
     font-family:'Kanit', sans-serif;
     text-shadow: 1px 1px 5px red;
-    text-transform: capitalize;
     text-decoration: underline;
     font-style: italic;
     font-weight: 900;
     text-decoration-color: black;
+    text-transform: capitalize;
 }
 .footercontacto{
     background-color: aquamarine;
@@ -606,6 +606,12 @@ form{
     font-weight: bolder;
     font-variant: normal; 
 }
+.tituloayuda{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px red;
+}
 .titulo4ayuda{
     color: black;
     font-size: 26px;
@@ -649,4 +655,106 @@ form{
     text-shadow: 1px 1px 5px red;
     font-family: 'Kanit', sans-serif;
     text-transform: capitalize;
+}
+input{
+    transition: all 2s;
+}
+input:focus{
+    font-size: 60px;
+    border: 5px dotted black;
+    color: green;
+}
+input::requiredplaceholder{
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+.beneficio{
+    height: 50px;
+    width: 500px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid black;
+}
+#beneficio1{
+    transition: height 2.7s;
+}
+#beneficio1:hover{
+    height: 300px;
+    width: 500px;
+}
+#beneficio2{
+    transition: height 2.7s;
+}
+#beneficio2:hover{
+    height: 300px;
+    width: 500px;
+}
+#beneficio3{
+    transition: height 2.7s, width 0.7s;
+}
+#beneficio3:active{
+    height: 200px;
+    width: 800px;
+}
+#beneficio4{
+    transition: all 2.7s;
+}
+#beneficio4:hover{
+    background-color: red;
+    height: 100px;
+    width: 800px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    transition: all 2.7s;
+}
+.cualesbeneficios{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px red;
+}
+.contenedor{
+    background-color: aqua;
+    height: auto;
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+}
+.cuadrado{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 200px;
+    border: 5px solid blue;
+    font-family: sans-serif;
+    color:red;
+}
+.cuadrado1{
+    background-color: blue;
+    border: 12px solid black;
+    transform: translate(450px, 20px);
+    text-align: center;
+}
+.cuadrado2{
+    background-color: blue;
+    border: 12px solid black;
+    transform: rotate(20deg);
+    text-align: center;
+}
+.cuadrado3{
+    background-color: blue;
+    border: 12px solid black;
+    transform: translate(350px, 20px) skew(25deg);
+    text-align: center;
+}
+.cuadrado4{
+    background-color: blue;
+    border: 12px solid black;
+    transform: translate(700px, 20px) scale(1.2);
+    text-align: center;
 }
