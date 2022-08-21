@@ -574,7 +574,7 @@ form{
     text-shadow: 1px 1px 5px red;
     text-decoration: underline;
     font-style: italic;
-    font-weight: 900;
+    font-weight: bold;
     text-decoration-color: black;
     text-transform: capitalize;
 }
@@ -843,4 +843,28 @@ input::requiredplaceholder{
     color: white;
     background-color: blue;
     text-transform: capitalize;
+}
+.jumbotron{
+    background-image: url(./multimedia/car-g66c75ce53_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+.titulojumbotron{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    color: aquamarine;
+    text-decoration: none;
+}
+.parrafojumbotron{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-weight: bold;
+}
+.parrafojumbotron::selection{
+    color: darkturquoise;
 }
