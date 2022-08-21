@@ -32,6 +32,9 @@ h1{
     font-size: 40px;
     text-transform: capitalize;
 }
+h1::selection{
+    color: red;
+}
 h2{
     color: black;
     font-size: 26px;
