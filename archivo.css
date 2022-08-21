@@ -776,47 +776,6 @@ input::requiredplaceholder{
     text-decoration: underline;
     text-shadow: 1px 1px 5px red;
 }
-.contenedor{
-    background-color: aqua;
-    height: auto;
-    width: 90%;
-    padding: 50px;
-    margin: auto;
-}
-.cuadrado{
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    font-size: 40px;
-    line-height: 200px;
-    border: 5px solid blue;
-    font-family: sans-serif;
-    color:red;
-}
-.cuadrado1{
-    background-color: blue;
-    border: 12px solid black;
-    transform: translate(450px, 20px);
-    text-align: center;
-}
-.cuadrado2{
-    background-color: blue;
-    border: 12px solid black;
-    transform: rotate(20deg);
-    text-align: center;
-}
-.cuadrado3{
-    background-color: blue;
-    border: 12px solid black;
-    transform: translate(350px, 20px) skew(25deg);
-    text-align: center;
-}
-.cuadrado4{
-    background-color: blue;
-    border: 12px solid black;
-    transform: translate(700px, 20px) scale(1.2);
-    text-align: center;
-}
 .card-title{
     text-align: left;
     font-size: 20px;
@@ -848,7 +807,8 @@ input::requiredplaceholder{
     background-image: url(./multimedia/car-g66c75ce53_1280.jpg);
     background-position: center;
     background-size: cover;
-    height: 700px;
+    height: 100%;
+    width: 80%;
 }
 .titulojumbotron{
     font-size: 20px;
@@ -867,4 +827,39 @@ input::requiredplaceholder{
 }
 .parrafojumbotron::selection{
     color: darkturquoise;
+}
+.ar{
+    background-color: aquamarine;
+    background-image: url(./multimedia/fondo\ aside.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.al{
+    background-color: aquamarine;
+    color: black;
+    height: 600px;
+}
+.tituloayuda{
+    color: black;
+    font-size: 26px;
+    font-style: normal;
+    text-decoration: underline;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px red;
+    font-family: 'Kanit', sans-serif;
+    text-transform: capitalize;
+}
+.tituloayuda::selection{
+    color:blue
+}
+.parrafo1ayuda{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.listaayuda{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
