@@ -817,3 +817,30 @@ input::requiredplaceholder{
     transform: translate(700px, 20px) scale(1.2);
     text-align: center;
 }
+.card-title{
+    text-align: left;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.card-title::selection{
+    color: red;
+}
+.card-text{
+    text-align: left;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-style: oblique;
+}
+.card-text::selection{
+    color: red;
+}
+.btn-primary{
+    color: white;
+    background-color: blue;
+    text-transform: capitalize;
+}
