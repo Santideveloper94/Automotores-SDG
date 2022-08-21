@@ -863,3 +863,12 @@ input::requiredplaceholder{
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
+.sec{
+    width: 100%;
+}
+.carousel-indicators li{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+}
