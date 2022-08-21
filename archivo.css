@@ -582,6 +582,23 @@ form{
     font-family: 'Kanit', sans-serif;
     text-transform: capitalize;
 }
+.navbar{
+    background-color: aquamarine;
+    color: black;
+    text-shadow: 1px 1px 5px red;
+    text-transform: capitalize;
+    height: auto;
+}
+.btn-info{
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+.btn-info:hover{
+    color: blue;
+    background-color: black;
+}
 .footerayuda{
     background-color: aquamarine;
     color: black;

@@ -13,16 +13,31 @@
 <body>
     <!--ETIQUETA SEMANTICA HEADER, ETIQUETA PRINCIPAL QUE EN GENERAL SE UTILIZA PARA CONTENER TODO LO REFERIDO AL ENCABEZADO (NAV, POR EJEMPLO)--> 
     <header>
-    <h1><strong>Contacto</strong></h1>
-    <nav>
-        <ul type="circle">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./beneficios.html">Beneficios</a></li>
-            <li><a href="./ayuda.html">Ayuda</a></li>
+        <h1>Contacto</h1>
+    <nav class="navbar navbar-expand-md">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./contacto.html"><strong>Contacto</strong></a>
+    <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./beneficios.html">Beneficios</a>
+            </li>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./ayuda.html">Ayuda</a>
+        </li>
         </ul>
+        </div>
     </nav>
+    <!-- Button info -->
+    <button type="button" class="btn btn-info">Contactenos</button>
     </header>
     <h2>Comuniquese con nosotros</h2>
     <form action="contacto.html" method="post" enctype="text/plain">
