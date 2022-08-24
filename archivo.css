@@ -833,7 +833,7 @@ input::requiredplaceholder{
     background-image: url(./multimedia/fondo\ aside.jpg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
 }
 .al{
     background-color: aquamarine;
