@@ -161,61 +161,73 @@ h3::selection{
     background-image: url(./multimedia/audi\ rojo.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item2{
     background-image: url(./multimedia/audi.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item3{
     background-image: url(./multimedia/camioneta\ bmw.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item4{
     background-image: url(./multimedia/corvette.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item5{
     background-image: url(./multimedia/ferrari\ de\ carrera.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item6{
     background-image: url(./multimedia/interior\ clase\ c.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item7{
     background-image: url(./multimedia/interior\ mercedes\ benz.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item8{
     background-image: url(./multimedia/maserati\ gran\ turismo.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item9{
     background-image: url(./multimedia/mercedes\ azul.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item10{
     background-image: url(./multimedia/mercedes\ blanco.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item11{
     background-image: url(./multimedia/porsche\ 911.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 .item12{
     background-image: url(./multimedia/rolls\ royce\ blanco.jpg);
     background-position: center;
     background-size: cover;
+    width: 40vh !important;
 }
 footer{
     background-color: aquamarine;
