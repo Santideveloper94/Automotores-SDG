@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+$color1: red;
+$color2: aquamarine;
+$color3: blue;
+$color4: black;
+$color5: white;
+
+$tamaño1: 12px;
+$tamaño2: 20px;
+$tamaño3: 26px;
+$tamaño4: 28px;
+$tamaño5: 30px;
+$tamaño6: 40px;
+
+$var1: 100%;
+$var2: 75%;
+$var3: 50%;
+$var4: 25%;
+
+$fuente1: 'Kanit', sans-serif;
+$fuente2: 'Times New Roman', Times, serif;
+$fuente3:  Arial, Helvetica, sans-serif;
+$fuente4: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fuente5:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+footer{
+    background-color: $color2;
+    color: $color4;
+    border: $tamaño1 solid $color4;
+    font-size: $tamaño2;
+    width: auto;
+    height: auto;
+    border-radius: $tamaño1;
+
+    h3{
+        color: $color4;
+        font-size: $tamaño3;
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px $color1;
+        font-family: 'Kanit', sans-serif;
+        text-transform: capitalize;
+    }
+    h3::selection{
+        color: $color1;
+    }
+
+    #Instagram01{
+        text-decoration: underline;
+        font-weight: bolder;
+        font-variant: normal;
+    }
+    #Facebook02{
+    @extend #Instagram01
+    }
+    #Whatsapp03{
+    @extend #Instagram01
+    }
+    
+}
+
+.bodyhome{
+    background-image: url(./multimedia/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+    .headerhome{
+        background-color: $color2;
+        color: $color4;
+        border: $tamaño1 solid $color4;
+        font-size: $tamaño2;
+        width: auto;
+        height: auto;
+        border-radius: $tamaño1;
+        font-family: 'Kanit', sans-serif;
+        margin: 15px;
+
+        .titulo1home{
+            color: $color4;
+            text-decoration: underline;
+            font-style: normal;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration-style: solid;
+            text-shadow: 1px 1px 5px $color1;
+            font-family: 'Kanit', sans-serif;
+            font-size: $tamaño6;
+            text-transform: capitalize;
+        }
+        .titulo1home::selection{
+            color: $color1;
+        }
+        .navbar{
+            background-color: $color2;
+            color: $color4;
+            text-shadow: 1px 1px 5px $color1;
+            text-transform: capitalize;
+            height: auto;
+        }
+    }
+
+    div{
+        h1{
+            color: $color4;
+            text-decoration: underline;
+            font-style: normal;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration-style: solid;
+            text-shadow: 1px 1px 5px $color1;
+            font-family: 'Kanit', sans-serif;
+            font-size: $tamaño6;
+            text-transform: capitalize;
+        }
+        h1::selection{
+            color: $color1;
+        }
+        .jumbotron{
+            background-image: url(./multimedia/car-g66c75ce53_1280.jpg);
+            background-position: center;
+            background-size: cover;
+            height: ($var2) + ($var4);
+            width: 80%;
+        }
+        .titulojumbotron{
+            font-size: $tamaño2;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            text-shadow: 0px 0px 5px $color4;
+            color: $color2;
+            text-decoration: none;
+        }
+        .parrafojumbotron{
+            font-size: $tamaño4;
+            font-family: Arial, Helvetica, sans-serif;
+            color: $color1;
+            font-weight: bold;
+        }
+        .parrafojumbotron::selection{
+            color: darkturquoise;
+        }
+        .btn-info{
+            color: $color4;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-family: 'Kanit', sans-serif;
+        }
+        .btn-info:hover{
+            color: $color3;
+            background-color: $color4;
+        }
+    }
+        h1{
+            color: $color4;
+            text-decoration: underline;
+            font-style: normal;
+            font-weight: bolder;
+            text-align: center;
+            text-decoration-style: solid;
+            text-shadow: 1px 1px 5px $color1;
+            font-family: 'Kanit', sans-serif;
+            font-size: $tamaño6;
+            text-transform: capitalize;
+        }
+        h1::selection{
+            color: $color1;
+        }
+
+        section{
+            div{
+                div{
+                    .card-title{
+                        text-align: left;
+                        font-size: $tamaño2;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: bold;
+                        text-decoration: underline;
+                        text-transform: capitalize;
+                    }
+                    .card-title::selection{
+                        color: $color1;
+                    }
+                    .card-text{
+                        text-align: left;
+                        font-size: 16px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        font-style: oblique;
+                    }
+                    .card-text::selection{
+                        color: $color1;
+                    }
+                }
+            }
+        }
+        
+        .footerhome{
+            background-color: $color2;
+            color: $color4;
+            border: $tamaño1 solid $color4;
+            font-size: $tamaño2;
+            width: auto;
+            height: auto;
+            border-radius: $tamaño1;
+            
+                .titulo2home{
+                    color: $color4;
+                    font-size: $tamaño3;
+                    font-style: normal;
+                    text-decoration: underline;
+                    font-weight: bolder;
+                    text-shadow: 1px 1px 5px $color1;
+                    font-family: 'Kanit', sans-serif;
+                    text-transform: capitalize;
+                }
+                .titulo2home::selection{
+                    color: $color1;
+                }
+                #instagramhome{
+                    text-decoration: underline;
+                    font-weight: bolder;
+                    font-variant: normal;
+                }
+                .facebookhome{
+                @extend #instagramhome
+                }
+                .titulo3home{
+                    color: $color4;
+                    font-size: $tamaño3;
+                    font-style: normal;
+                    text-decoration: underline;
+                    font-weight: bolder;
+                    text-shadow: 1px 1px 5px $color1;
+                    font-family: 'Kanit', sans-serif;
+                    text-transform: capitalize;
+                }
+                .titulo3home::selection{
+                    color: $color1;
+                }
+                .whatsapphome{
+                    @extend #instagramhome
+                }
+            }

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+$color1: red;
+$color2: aquamarine;
+$color3: blue;
+$color4: black;
+$color5: white;
+
+$tamaño1: 12px;
+$tamaño2: 20px;
+$tamaño3: 26px;
+$tamaño4: 28px;
+$tamaño5: 30px;
+$tamaño6: 40px;
+
+$var1: 100%;
+$var2: 75%;
+$var3: 50%;
+$var4: 25%;
+
+$fuente1: 'Kanit', sans-serif;
+$fuente2: 'Times New Roman', Times, serif;
+$fuente3:  Arial, Helvetica, sans-serif;
+$fuente4: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fuente5:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+header{
+    h1{
+        color: $color4;
+        text-decoration: underline;
+        font-style: normal;
+        font-weight: bolder;
+        text-align: center;
+        text-decoration-style: solid;
+        text-shadow: 1px 1px 5px $color1;
+        font-family: 'Kanit', sans-serif;
+        font-size: $tamaño6;
+        text-transform: capitalize;
+    }
+    h1::selection{
+        color: $color1;
+    }
+    .navbar{
+        background-color: $color2;
+        color: $color4;
+        text-shadow: 1px 1px 5px $color1;
+        text-transform: capitalize;
+        height: auto;
+    }
+    .btn-info{
+        color: $color4;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Kanit', sans-serif;
+    }
+    .btn-info:hover{
+        color: $color3;
+        background-color: $color4;
+    }
+}
+
+section{
+        .tituloayuda{
+            text-align: center;
+            font-size: 50px;
+            text-decoration: underline;
+            text-shadow: 1px 1px 5px $color1;
+        }
+        .tituloayuda::selection{
+            color: $color1;
+        }
+        .parrafo1ayuda{
+            font-size: $tamaño2;
+            font-family: 'Times New Roman', Times, serif;
+            color: $color4;
+
+            .listaayuda{
+                font-size: $tamaño2;
+                font-family: 'Times New Roman', Times, serif;
+                color: $color4;
+                font-weight: 900;
+            }
+        }
+    }
+
+.footerayuda{
+    background-color: $color2;
+    color: $color4;
+    border: $tamaño1 solid $color4;
+    font-size: $tamaño2;
+    width: auto;
+    height: auto;
+    border-radius: $tamaño1;
+
+    h3{
+        color: $color4;
+        font-size: $tamaño3;
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px $color1;
+        font-family: 'Kanit', sans-serif;
+        text-transform: capitalize;
+    }
+    h3::selection{
+        color: $color1;
+    }
+
+    #instagramayuda{
+        text-decoration: underline;
+        font-weight: bolder;
+        font-variant: normal; 
+    }
+
+    #facebookayuda{
+    @extend #instagramayuda 
+    }
+
+    .titulo4ayuda{
+        color: $color4;
+        font-size: $tamaño3;
+        font-style: normal;
+        text-decoration: underline;
+        font-weight: bolder;
+        text-shadow: 1px 1px 5px $color1;
+        font-family: 'Kanit', sans-serif;
+        text-transform: capitalize;
+    }
+    .titulo4ayuda::selection{
+        color: $color1;
+    }
+
+    #whatsappayuda{
+        @extend #instagramayuda
+    }
+}

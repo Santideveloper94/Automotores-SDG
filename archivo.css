@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap");
+@import url("./parciales/_beneficios.scss");
+@import url("./parciales/_contacto.scss");
+@import url("./parciales/_servicios.scss");
 * {
   margin: 0;
   padding: 10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -20,23 +24,31 @@ header {
   width: auto;
   height: auto;
   border-radius: 12px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+header h1::-moz-selection {
+  color: red;
+}
+
 header h1::selection {
   color: red;
 }
+
 header h2 {
   color: black;
   font-size: 26px;
@@ -45,26 +57,35 @@ header h2 {
   font-weight: bolder;
   text-align: left;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+header h2::-moz-selection {
+  color: red;
+}
+
 header h2::selection {
   color: red;
 }
+
 header ul li {
   font-size: 26px;
   font-style: normal;
   font-weight: bolder;
 }
+
 header .barra li {
   list-style-type: none;
   display: inline-block;
 }
+
 header .barra a {
   text-decoration: none;
   text-shadow: 1px 1px 5px black;
   text-transform: capitalize;
 }
+
 header .barra a:hover {
   color: black;
 }
@@ -77,12 +98,18 @@ main h2 {
   font-weight: bolder;
   text-align: left;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+main h2::-moz-selection {
+  color: red;
+}
+
 main h2::selection {
   color: red;
 }
+
 main .parrafo1 {
   color: black;
   background-color: aquamarine;
@@ -93,6 +120,7 @@ main .parrafo1 {
   width: auto;
   border-radius: 12px;
 }
+
 main .parrafo2 {
   color: black;
   background-color: aquamarine;
@@ -103,132 +131,161 @@ main .parrafo2 {
   width: auto;
   border-radius: 12px;
 }
+
 main .video1 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .video2 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .imagen1 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .imagen2 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .imagen3 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .titulogaleria {
   text-align: left;
   text-shadow: 1px 1px 5px red;
   font-size: 30px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-decoration: underline;
   color: black;
   font-weight: bolder;
   font-size: 26px;
   text-transform: capitalize;
 }
+
 main .galeria {
+  display: -ms-grid;
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(4, 200px);
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: (200px)[4];
+      grid-template-rows: repeat(4, 200px);
   grid-gap: 20px;
   min-height: 100vh;
   padding: 10px;
 }
+
 main .item {
   width: 100%;
   background-color: black;
   border: 10px solid dark blue;
-  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   border-radius: 12px;
-  box-shadow: 1px 1px 5px red;
+  -webkit-box-shadow: 1px 1px 5px red;
+          box-shadow: 1px 1px 5px red;
 }
+
 main .item:hover {
-  transform: scale(1, 1);
-  transition: all 0, 8s;
-  filter: grayscale(0%);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all 0,8s;
+  transition: all 0,8s;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
+
 main .item1 {
-  background-image: url(./multimedia/audi\ rojo.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item2 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item3 {
-  background-image: url(./multimedia/camioneta\ bmw.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item4 {
   background-image: url(./multimedia/corvette.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item5 {
-  background-image: url(./multimedia/ferrari\ de\ carrera.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item6 {
-  background-image: url(./multimedia/interior\ clase\ c.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item7 {
-  background-image: url(./multimedia/interior\ mercedes\ benz.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item8 {
-  background-image: url(./multimedia/maserati\ gran\ turismo.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item9 {
-  background-image: url(./multimedia/mercedes\ azul.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item10 {
-  background-image: url(./multimedia/mercedes\ blanco.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item11 {
-  background-image: url(./multimedia/porsche\ 911.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item12 {
-  background-image: url(./multimedia/rolls\ royce\ blanco.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
@@ -243,6 +300,7 @@ footer {
   height: auto;
   border-radius: 12px;
 }
+
 footer h3 {
   color: black;
   font-size: 26px;
@@ -250,17 +308,24 @@ footer h3 {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+footer h3::-moz-selection {
+  color: red;
+}
+
 footer h3::selection {
   color: red;
 }
-footer #Instagram01, footer #Whatsapp03, footer #Facebook02 {
+
+footer #Instagram01, footer #Facebook02, footer #Whatsapp03 {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .bodyhome {
   background-image: url(./multimedia/fondo.jpg);
   background-position: center;
@@ -275,24 +340,32 @@ footer #Instagram01, footer #Whatsapp03, footer #Facebook02 {
   width: auto;
   height: auto;
   border-radius: 12px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   margin: 15px;
 }
+
 .headerhome .titulo1home {
   color: black;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+.headerhome .titulo1home::-moz-selection {
+  color: red;
+}
+
 .headerhome .titulo1home::selection {
   color: red;
 }
+
 .headerhome .navbar {
   background-color: aquamarine;
   color: black;
@@ -307,15 +380,22 @@ div h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+div h1::-moz-selection {
+  color: red;
+}
+
 div h1::selection {
   color: red;
 }
+
 div .jumbotron {
   background-image: url(./multimedia/car-g66c75ce53_1280.jpg);
   background-position: center;
@@ -323,30 +403,39 @@ div .jumbotron {
   height: 100%;
   width: 80%;
 }
+
 div .titulojumbotron {
   font-size: 20px;
   font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   text-shadow: 0px 0px 5px black;
   color: aquamarine;
   text-decoration: none;
 }
+
 div .parrafojumbotron {
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
   color: red;
   font-weight: bold;
 }
+
+div .parrafojumbotron::-moz-selection {
+  color: darkturquoise;
+}
+
 div .parrafojumbotron::selection {
   color: darkturquoise;
 }
+
 div .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
+
 div .btn-info:hover {
   color: blue;
   background-color: black;
@@ -358,11 +447,16 @@ h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
+}
+
+h1::-moz-selection {
+  color: red;
 }
 
 h1::selection {
@@ -377,9 +471,15 @@ section div div .card-title {
   text-decoration: underline;
   text-transform: capitalize;
 }
+
+section div div .card-title::-moz-selection {
+  color: red;
+}
+
 section div div .card-title::selection {
   color: red;
 }
+
 section div div .card-text {
   text-align: left;
   font-size: 16px;
@@ -388,6 +488,11 @@ section div div .card-text {
   font-weight: bold;
   font-style: oblique;
 }
+
+section div div .card-text::-moz-selection {
+  color: red;
+}
+
 section div div .card-text::selection {
   color: red;
 }
@@ -401,6 +506,7 @@ section div div .card-text::selection {
   height: auto;
   border-radius: 12px;
 }
+
 .footerhome .titulo2home {
   color: black;
   font-size: 26px;
@@ -408,17 +514,24 @@ section div div .card-text::selection {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerhome .titulo2home::-moz-selection {
+  color: red;
+}
+
 .footerhome .titulo2home::selection {
   color: red;
 }
-.footerhome #instagramhome, .footerhome .whatsapphome, .footerhome .facebookhome {
+
+.footerhome #instagramhome, .footerhome .facebookhome, .footerhome .whatsapphome {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerhome .titulo3home {
   color: black;
   font-size: 26px;
@@ -426,27 +539,40 @@ section div div .card-text::selection {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerhome .titulo3home::-moz-selection {
+  color: red;
+}
+
 .footerhome .titulo3home::selection {
   color: red;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+header h1::-moz-selection {
+  color: red;
+}
+
 header h1::selection {
   color: red;
 }
+
 header .navbar {
   background-color: aquamarine;
   color: black;
@@ -454,12 +580,14 @@ header .navbar {
   text-transform: capitalize;
   height: auto;
 }
+
 header .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
+
 header .btn-info:hover {
   color: blue;
   background-color: black;
@@ -473,8 +601,12 @@ h2 {
   font-weight: bolder;
   text-align: left;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
+}
+
+h2::-moz-selection {
+  color: red;
 }
 
 h2::selection {
@@ -483,12 +615,13 @@ h2::selection {
 
 form {
   font-size: 20px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-shadow: 1px 1px 5px red;
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
-  text-decoration-color: black;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
   text-transform: capitalize;
 }
 
@@ -499,8 +632,12 @@ h3 {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
+}
+
+h3::-moz-selection {
+  color: red;
 }
 
 h3::selection {
@@ -515,9 +652,15 @@ section div .card-title {
   text-decoration: underline;
   text-transform: capitalize;
 }
+
+section div .card-title::-moz-selection {
+  color: red;
+}
+
 section div .card-title::selection {
   color: red;
 }
+
 section div .card-text {
   text-align: left;
   font-size: 16px;
@@ -526,9 +669,15 @@ section div .card-text {
   font-weight: bold;
   font-style: oblique;
 }
+
+section div .card-text::-moz-selection {
+  color: red;
+}
+
 section div .card-text::selection {
   color: red;
 }
+
 section div .btn-primary {
   color: white;
   background-color: blue;
@@ -544,6 +693,7 @@ section div .btn-primary {
   height: auto;
   border-radius: 12px;
 }
+
 .footercontacto h3 {
   color: black;
   font-size: 26px;
@@ -551,17 +701,24 @@ section div .btn-primary {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footercontacto h3::-moz-selection {
+  color: red;
+}
+
 .footercontacto h3::selection {
   color: red;
 }
-.footercontacto #instagramcontacto, .footercontacto #whatsappcontacto, .footercontacto #facebookcontacto {
+
+.footercontacto #instagramcontacto, .footercontacto #facebookcontacto, .footercontacto #whatsappcontacto {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footercontacto .titulo4contacto {
   color: black;
   font-size: 26px;
@@ -569,17 +726,24 @@ section div .btn-primary {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footercontacto .titulo4contacto::-moz-selection {
+  color: red;
+}
+
 .footercontacto .titulo4contacto::selection {
   color: red;
 }
+
 .bodyservicios {
   background-image: url(./multimedia/fondo.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .bodyservicios .headerservicios {
   background-color: aquamarine;
   color: black;
@@ -588,24 +752,32 @@ section div .btn-primary {
   width: auto;
   height: auto;
   border-radius: 12px;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   margin: 15px;
 }
+
 .bodyservicios .titulo1servicios {
   color: black;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+.bodyservicios .titulo1servicios::-moz-selection {
+  color: red;
+}
+
 .bodyservicios .titulo1servicios::selection {
   color: red;
 }
+
 .bodyservicios .navbar {
   background-color: aquamarine;
   color: black;
@@ -613,12 +785,14 @@ section div .btn-primary {
   text-transform: capitalize;
   height: auto;
 }
+
 .bodyservicios .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
+
 .bodyservicios .btn-info:hover {
   color: blue;
   background-color: black;
@@ -632,12 +806,18 @@ main .h2servicios {
   font-weight: bolder;
   text-align: left;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+main h2servicios::-moz-selection {
+  color: red;
+}
+
 main h2servicios::selection {
   color: red;
 }
+
 main .parrafo1servicios {
   color: black;
   background-color: aquamarine;
@@ -648,6 +828,7 @@ main .parrafo1servicios {
   width: auto;
   border-radius: 12px;
 }
+
 main .listaservicios {
   background-color: aquamarine;
   color: black;
@@ -665,19 +846,22 @@ main .listaservicios {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
 
 .cajaservicios {
+  display: -ms-grid;
   display: grid;
   width: 100%;
   height: 100vh;
   padding: 10px;
   margin: 12px;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 200px);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (200px)[2];
+      grid-template-rows: repeat(2, 200px);
 }
 
 .caja {
@@ -687,18 +871,23 @@ main .listaservicios {
   height: 100%;
   border-radius: 12px;
   background-color: black;
-  box-shadow: 1px 1px 5px red;
-  filter: grayscale(100%);
+  -webkit-box-shadow: 1px 1px 5px red;
+          box-shadow: 1px 1px 5px red;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .caja:hover {
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
-  transform: scale(1, 1);
-  filter: grayscale(0%);
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .caja1 {
-  background-image: url(./multimedia/alineacion\ y\ balanceo.jpg);
+  background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -741,6 +930,7 @@ main .listaservicios {
   height: auto;
   border-radius: 12px;
 }
+
 .footerservicios .titulo2servicios {
   color: black;
   font-size: 26px;
@@ -748,17 +938,24 @@ main .listaservicios {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerservicios .titulos2servicios::-moz-selection {
+  color: red;
+}
+
 .footerservicios .titulos2servicios::selection {
   color: red;
 }
-.footerservicios #instagramservicios, .footerservicios #whatsappservicios, .footerservicios #facebookservicios {
+
+.footerservicios #instagramservicios, .footerservicios #facebookservicios, .footerservicios #whatsappservicios {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerservicios .titulo3servicios {
   color: black;
   font-size: 26px;
@@ -766,27 +963,40 @@ main .listaservicios {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerservicios .titulos3servicios::-moz-selection {
+  color: red;
+}
+
 .footerservicios .titulos3servicios::selection {
   color: red;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+header h1::-moz-selection {
+  color: red;
+}
+
 header h1::selection {
   color: red;
 }
+
 header .navbar {
   background-color: aquamarine;
   color: black;
@@ -794,12 +1004,14 @@ header .navbar {
   text-transform: capitalize;
   height: auto;
 }
+
 header .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
+
 header .btn-info:hover {
   color: blue;
   background-color: black;
@@ -811,6 +1023,7 @@ main .cualesbeneficios {
   text-decoration: underline;
   text-shadow: 1px 1px 5px red;
 }
+
 main .beneficio {
   height: 60px;
   width: 500px;
@@ -818,44 +1031,59 @@ main .beneficio {
   text-align: center;
   font-size: 30px;
   padding: 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: 5px solid black;
 }
+
 main #beneficio1 {
+  -webkit-transition: height 2.7s;
   transition: height 2.7s;
 }
+
 main #beneficio1:hover {
   height: 300px;
   width: 500px;
 }
+
 main #beneficio2 {
+  -webkit-transition: height 2.7s;
   transition: height 2.7s;
 }
+
 main #beneficio2:hover {
   height: 300px;
   width: 500px;
 }
+
 main #beneficio3 {
+  -webkit-transition: height 2.7s, width 0.7s;
   transition: height 2.7s, width 0.7s;
 }
+
 main #beneficio3:active {
   height: 200px;
   width: 800px;
 }
+
 main #beneficio4 {
+  -webkit-transition: all 2.7s;
   transition: all 2.7s;
 }
+
 main #beneficio4:hover {
   background-color: red;
   height: 100px;
   width: 800px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 40px;
+  -webkit-transition: all 2.7s;
   transition: all 2.7s;
 }
+
 main .sec {
   width: 100%;
 }
+
 main .carousel-indicators li {
   height: 5vh;
   width: 5vh;
@@ -872,6 +1100,7 @@ main .carousel-indicators li {
   height: auto;
   border-radius: 12px;
 }
+
 .footerbeneficios h3 {
   color: black;
   font-size: 26px;
@@ -879,17 +1108,24 @@ main .carousel-indicators li {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerbeneficios h3::-moz-selection {
+  color: red;
+}
+
 .footerbeneficios h3::selection {
   color: red;
 }
-.footerbeneficios #instagrambeneficios, .footerbeneficios #whatsappbeneficios, .footerbeneficios #facebookbeneficios {
+
+.footerbeneficios #instagrambeneficios, .footerbeneficios #facebookbeneficios, .footerbeneficios #whatsappbeneficios {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerbeneficios .titulo4beneficios {
   color: black;
   font-size: 26px;
@@ -897,27 +1133,40 @@ main .carousel-indicators li {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerbeneficios .titulo4beneficios::-moz-selection {
+  color: red;
+}
+
 .footerbeneficios .titulo4beneficios::selection {
   color: red;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  text-decoration-style: solid;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 40px;
   text-transform: capitalize;
 }
+
+header h1::-moz-selection {
+  color: red;
+}
+
 header h1::selection {
   color: red;
 }
+
 header .navbar {
   background-color: aquamarine;
   color: black;
@@ -925,12 +1174,14 @@ header .navbar {
   text-transform: capitalize;
   height: auto;
 }
+
 header .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
+
 header .btn-info:hover {
   color: blue;
   background-color: black;
@@ -942,17 +1193,24 @@ section .tituloayuda {
   text-decoration: underline;
   text-shadow: 1px 1px 5px red;
 }
+
+section .tituloayuda::-moz-selection {
+  color: red;
+}
+
 section .tituloayuda::selection {
   color: red;
 }
+
 section .parrafo1ayuda {
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: black;
 }
+
 section .parrafo1ayuda .listaayuda {
   font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   color: black;
   font-weight: 900;
 }
@@ -966,6 +1224,7 @@ section .parrafo1ayuda .listaayuda {
   height: auto;
   border-radius: 12px;
 }
+
 .footerayuda h3 {
   color: black;
   font-size: 26px;
@@ -973,17 +1232,24 @@ section .parrafo1ayuda .listaayuda {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerayuda h3::-moz-selection {
+  color: red;
+}
+
 .footerayuda h3::selection {
   color: red;
 }
-.footerayuda #instagramayuda, .footerayuda #whatsappayuda, .footerayuda #facebookayuda {
+
+.footerayuda #instagramayuda, .footerayuda #facebookayuda, .footerayuda #whatsappayuda {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerayuda .titulo4ayuda {
   color: black;
   font-size: 26px;
@@ -991,16 +1257,24 @@ section .parrafo1ayuda .listaayuda {
   text-decoration: underline;
   font-weight: bolder;
   text-shadow: 1px 1px 5px red;
-  font-family: "Kanit", sans-serif;
+  font-family: 'Kanit', sans-serif;
   text-transform: capitalize;
 }
+
+.footerayuda .titulo4ayuda::-moz-selection {
+  color: red;
+}
+
 .footerayuda .titulo4ayuda::selection {
   color: red;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .galeria {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     width: 200px;
   }
   .item {
@@ -1011,12 +1285,16 @@ section .parrafo1ayuda .listaayuda {
     border: 12px solid blue;
     padding: 0;
     border-radius: 12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .video2 {
     border: 12px solid blue;
     padding: 0;
     border-radius: 12px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .imagen1 {
@@ -1038,11 +1316,15 @@ section .parrafo1ayuda .listaayuda {
     width: 300px;
   }
   .ubicacion {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .cajaservicios {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     width: 100%;
   }
   .headerservicios {
@@ -1074,5 +1356,4 @@ section .parrafo1ayuda .listaayuda {
     height: auto;
   }
 }
-
 /*# sourceMappingURL=archivo.css.map */

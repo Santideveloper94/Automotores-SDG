@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap');
+
+
+// DE ESTA MANERA LOS LLAMAMOS AL ARCHIVO MADRE PERO DISTRIBUIMOS LOS ESTILOS ORGANIZADOS MEJOR EN CADA PARCIAL
+@import url("./parciales/_beneficios.scss");
+@import url("./parciales/_contacto.scss");
+@import url("./parciales/_servicios.scss");
+
+
 *{
     margin: 0;
     padding: 10px;
@@ -192,7 +200,7 @@ main{
         filter: grayscale(0%);
     }
     .item1{
-        background-image: url(./multimedia/audi\ rojo.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
@@ -204,7 +212,7 @@ main{
         width: 40vh !important;
     }
     .item3{
-        background-image: url(./multimedia/camioneta\ bmw.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
@@ -216,49 +224,49 @@ main{
         width: 40vh !important;
     }
     .item5{
-        background-image: url(./multimedia/ferrari\ de\ carrera.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item6{
-        background-image: url(./multimedia/interior\ clase\ c.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item7{
-        background-image: url(./multimedia/interior\ mercedes\ benz.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item8{
-        background-image: url(./multimedia/maserati\ gran\ turismo.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item9{
-        background-image: url(./multimedia/mercedes\ azul.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item10{
-        background-image: url(./multimedia/mercedes\ blanco.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item11{
-        background-image: url(./multimedia/porsche\ 911.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
     }
     .item12{
-        background-image: url(./multimedia/rolls\ royce\ blanco.jpg);
+        background-image: url(./multimedia/audi.jpg);
         background-position: center;
         background-size: cover;
         width: 40vh !important;
@@ -757,7 +765,7 @@ footer{
                 filter: grayscale(0%);
             }
             .caja1{
-                background-image:url(./multimedia/alineacion\ y\ balanceo.jpg);
+                background-image:url(./multimedia/audi.jpg);
                 background-position: center;
                 background-size: cover;
             }
@@ -954,7 +962,7 @@ footer{
                 }
 
                 #facebookbeneficios{
-                  @extend #instagrambeneficios 
+                    @extend #instagrambeneficios 
                 }
 
                 .titulo4beneficios{
