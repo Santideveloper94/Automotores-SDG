@@ -31,15 +31,11 @@ header h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-header h1::-moz-selection {
-  color: red;
 }
 header h1::selection {
   color: red;
@@ -54,9 +50,6 @@ header h2 {
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
-}
-header h2::-moz-selection {
-  color: red;
 }
 header h2::selection {
   color: red;
@@ -89,9 +82,6 @@ main h2 {
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
-}
-main h2::-moz-selection {
-  color: red;
 }
 main h2::selection {
   color: red;
@@ -266,9 +256,6 @@ footer h3 {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-footer h3::-moz-selection {
-  color: red;
-}
 footer h3::selection {
   color: red;
 }
@@ -300,15 +287,11 @@ footer #Instagram01, footer #Whatsapp03, footer #Facebook02 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-.headerhome .titulo1home::-moz-selection {
-  color: red;
 }
 .headerhome .titulo1home::selection {
   color: red;
@@ -327,15 +310,11 @@ div h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-div h1::-moz-selection {
-  color: red;
 }
 div h1::selection {
   color: red;
@@ -362,9 +341,6 @@ div .parrafojumbotron {
   color: red;
   font-weight: bold;
 }
-div .parrafojumbotron::-moz-selection {
-  color: darkturquoise;
-}
 div .parrafojumbotron::selection {
   color: darkturquoise;
 }
@@ -385,16 +361,11 @@ h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-
-h1::-moz-selection {
-  color: red;
 }
 
 h1::selection {
@@ -409,9 +380,6 @@ section div div .card-title {
   text-decoration: underline;
   text-transform: capitalize;
 }
-section div div .card-title::-moz-selection {
-  color: red;
-}
 section div div .card-title::selection {
   color: red;
 }
@@ -422,9 +390,6 @@ section div div .card-text {
   text-transform: capitalize;
   font-weight: bold;
   font-style: oblique;
-}
-section div div .card-text::-moz-selection {
-  color: red;
 }
 section div div .card-text::selection {
   color: red;
@@ -449,9 +414,6 @@ section div div .card-text::selection {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerhome .titulo2home::-moz-selection {
-  color: red;
-}
 .footerhome .titulo2home::selection {
   color: red;
 }
@@ -470,9 +432,6 @@ section div div .card-text::selection {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerhome .titulo3home::-moz-selection {
-  color: red;
-}
 .footerhome .titulo3home::selection {
   color: red;
 }
@@ -482,15 +441,11 @@ header h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-header h1::-moz-selection {
-  color: red;
 }
 header h1::selection {
   color: red;
@@ -525,10 +480,6 @@ h2 {
   text-transform: capitalize;
 }
 
-h2::-moz-selection {
-  color: red;
-}
-
 h2::selection {
   color: red;
 }
@@ -540,8 +491,7 @@ form {
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
-  -webkit-text-decoration-color: black;
-          text-decoration-color: black;
+  text-decoration-color: black;
   text-transform: capitalize;
 }
 
@@ -556,10 +506,6 @@ h3 {
   text-transform: capitalize;
 }
 
-h3::-moz-selection {
-  color: red;
-}
-
 h3::selection {
   color: red;
 }
@@ -572,9 +518,6 @@ section div .card-title {
   text-decoration: underline;
   text-transform: capitalize;
 }
-section div .card-title::-moz-selection {
-  color: red;
-}
 section div .card-title::selection {
   color: red;
 }
@@ -585,9 +528,6 @@ section div .card-text {
   text-transform: capitalize;
   font-weight: bold;
   font-style: oblique;
-}
-section div .card-text::-moz-selection {
-  color: red;
 }
 section div .card-text::selection {
   color: red;
@@ -617,9 +557,6 @@ section div .btn-primary {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footercontacto h3::-moz-selection {
-  color: red;
-}
 .footercontacto h3::selection {
   color: red;
 }
@@ -637,9 +574,6 @@ section div .btn-primary {
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
-}
-.footercontacto .titulo4contacto::-moz-selection {
-  color: red;
 }
 .footercontacto .titulo4contacto::selection {
   color: red;
@@ -666,15 +600,11 @@ section div .btn-primary {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-.bodyservicios .titulo1servicios::-moz-selection {
-  color: red;
 }
 .bodyservicios .titulo1servicios::selection {
   color: red;
@@ -707,9 +637,6 @@ main .h2servicios {
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
-}
-main h2servicios::-moz-selection {
-  color: red;
 }
 main h2servicios::selection {
   color: red;
@@ -827,9 +754,6 @@ main .listaservicios {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerservicios .titulos2servicios::-moz-selection {
-  color: red;
-}
 .footerservicios .titulos2servicios::selection {
   color: red;
 }
@@ -848,9 +772,6 @@ main .listaservicios {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerservicios .titulos3servicios::-moz-selection {
-  color: red;
-}
 .footerservicios .titulos3servicios::selection {
   color: red;
 }
@@ -860,15 +781,11 @@ header h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-header h1::-moz-selection {
-  color: red;
 }
 header h1::selection {
   color: red;
@@ -968,9 +885,6 @@ main .carousel-indicators li {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerbeneficios h3::-moz-selection {
-  color: red;
-}
 .footerbeneficios h3::selection {
   color: red;
 }
@@ -989,9 +903,6 @@ main .carousel-indicators li {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerbeneficios .titulo4beneficios::-moz-selection {
-  color: red;
-}
 .footerbeneficios .titulo4beneficios::selection {
   color: red;
 }
@@ -1001,15 +912,11 @@ header h1 {
   font-style: normal;
   font-weight: bolder;
   text-align: center;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration-style: solid;
   text-shadow: 1px 1px 5px red;
   font-family: "Kanit", sans-serif;
   font-size: 40px;
   text-transform: capitalize;
-}
-header h1::-moz-selection {
-  color: red;
 }
 header h1::selection {
   color: red;
@@ -1032,14 +939,23 @@ header .btn-info:hover {
   background-color: black;
 }
 
+section .ar {
+  background-color: aquamarine;
+  background-image: url(./multimedia/fondo\ aside.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+section .al {
+  background-color: aquamarine;
+  color: black;
+  height: 100%;
+}
 section .tituloayuda {
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
   text-shadow: 1px 1px 5px red;
-}
-section .tituloayuda::-moz-selection {
-  color: red;
 }
 section .tituloayuda::selection {
   color: red;
@@ -1075,9 +991,6 @@ section .parrafo1ayuda .listaayuda {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerayuda h3::-moz-selection {
-  color: red;
-}
 .footerayuda h3::selection {
   color: red;
 }
@@ -1096,9 +1009,6 @@ section .parrafo1ayuda .listaayuda {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
-.footerayuda .titulo4ayuda::-moz-selection {
-  color: red;
-}
 .footerayuda .titulo4ayuda::selection {
   color: red;
 }
@@ -1116,16 +1026,12 @@ section .parrafo1ayuda .listaayuda {
     border: 12px solid blue;
     padding: 0;
     border-radius: 12px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .video2 {
     border: 12px solid blue;
     padding: 0;
     border-radius: 12px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .imagen1 {
@@ -1147,8 +1053,6 @@ section .parrafo1ayuda .listaayuda {
     width: 300px;
   }
   .ubicacion {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .cajaservicios {
@@ -1184,4 +1088,6 @@ section .parrafo1ayuda .listaayuda {
     width: 120vh;
     height: auto;
   }
-}/*# sourceMappingURL=archivo.css.map */
+}
+
+/*# sourceMappingURL=archivo.css.map */
