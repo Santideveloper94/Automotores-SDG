@@ -1,1215 +1,1248 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap');
-
-
-// DE ESTA MANERA LOS LLAMAMOS AL ARCHIVO MADRE PERO DISTRIBUIMOS LOS ESTILOS ORGANIZADOS MEJOR EN CADA PARCIAL
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Mouse+Memoirs&display=swap");
 @import url("./parciales/_beneficios.scss");
 @import url("./parciales/_contacto.scss");
 @import url("./parciales/_servicios.scss");
-
-
-*{
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-$color1: red;
-$color2: aquamarine;
-$color3: blue;
-$color4: black;
-$color5: white;
-
-$tamaño1: 12px;
-$tamaño2: 20px;
-$tamaño3: 26px;
-$tamaño4: 28px;
-$tamaño5: 30px;
-$tamaño6: 40px;
-
-$var1: 100%;
-$var2: 75%;
-$var3: 50%;
-$var4: 25%;
-
-$fuente1: 'Kanit', sans-serif;
-$fuente2: 'Times New Roman', Times, serif;
-$fuente3:  Arial, Helvetica, sans-serif;
-$fuente4: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-$fuente5:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-body{
-    background-image: url(./multimedia/fondo.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:top;
+body {
+  background-image: url(./multimedia/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
-header{
-    background-color: $color2;
-    color: $color4;
-    border: $tamaño1 solid $color4;
-    font-size: $tamaño2;
-    width: auto;
+header {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  font-family: "Kanit", sans-serif;
+}
+
+header h1 {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+header h1::selection {
+  color: red;
+}
+
+header h2 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+header h2::selection {
+  color: red;
+}
+
+header ul li {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: bolder;
+}
+
+header .barra li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+header .barra a {
+  text-decoration: none;
+  text-shadow: 1px 1px 5px black;
+  text-transform: capitalize;
+}
+
+header .barra a:hover {
+  color: black;
+}
+
+main h2 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+main h2::selection {
+  color: red;
+}
+
+main .parrafo1 {
+  color: black;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-size: 20px;
+  padding: 20px;
+  height: auto;
+  width: auto;
+  border-radius: 12px;
+}
+
+main .parrafo2 {
+  color: black;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-size: 20px;
+  padding: 20px;
+  height: auto;
+  width: auto;
+  border-radius: 12px;
+}
+
+main .video1 {
+  border: 12px solid blue;
+  padding: 0;
+  border-radius: 12px;
+}
+
+main .video2 {
+  border: 12px solid blue;
+  padding: 0;
+  border-radius: 12px;
+}
+
+main .imagen1 {
+  border: 12px solid blue;
+  padding: 0;
+  border-radius: 12px;
+}
+
+main .imagen2 {
+  border: 12px solid blue;
+  padding: 0;
+  border-radius: 12px;
+}
+
+main .imagen3 {
+  border: 12px solid blue;
+  padding: 0;
+  border-radius: 12px;
+}
+
+main .titulogaleria {
+  text-align: left;
+  text-shadow: 1px 1px 5px red;
+  font-size: 30px;
+  font-family: "Kanit", sans-serif;
+  text-decoration: underline;
+  color: black;
+  font-weight: bolder;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+main .galeria {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 200px);
+  grid-gap: 20px;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+main .item {
+  width: 100%;
+  background-color: black;
+  border: 10px solid dark blue;
+  filter: grayscale(100%);
+  border-radius: 12px;
+  box-shadow: 1px 1px 5px red;
+}
+
+main .item:hover {
+  transform: scale(1, 1);
+  transition: all 0, 8s;
+  filter: grayscale(0%);
+}
+
+main .item1 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item2 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item3 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item4 {
+  background-image: url(./multimedia/corvette.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item5 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item6 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item7 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item8 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item9 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item10 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item11 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+main .item12 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vh !important;
+}
+
+footer {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+footer h3 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+footer h3::selection {
+  color: red;
+}
+
+footer #Instagram01,
+footer #Whatsapp03,
+footer #Facebook02 {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant: normal;
+}
+
+.bodyhome {
+  background-image: url(./multimedia/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.headerhome {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  font-family: "Kanit", sans-serif;
+  margin: 15px;
+}
+
+.headerhome .titulo1home {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.headerhome .titulo1home::selection {
+  color: red;
+}
+
+.headerhome .navbar {
+  background-color: aquamarine;
+  color: black;
+  text-shadow: 1px 1px 5px red;
+  text-transform: capitalize;
+  height: auto;
+}
+
+div h1 {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+div h1::selection {
+  color: red;
+}
+
+div .jumbotron {
+  background-image: url(./multimedia/escarabajorojo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 80%;
+}
+
+div .titulojumbotron {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+  color: aquamarine;
+  text-decoration: none;
+}
+
+div .parrafojumbotron {
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-weight: bold;
+}
+
+div .parrafojumbotron::selection {
+  color: darkturquoise;
+}
+
+div .btn-info {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+div .btn-info:hover {
+  color: blue;
+  background-color: black;
+}
+
+h1 {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+h1::selection {
+  color: red;
+}
+
+section div div .card-title {
+  text-align: left;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+section div div .card-title::selection {
+  color: red;
+}
+
+section div div .card-text {
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+section div div .card-text::selection {
+  color: red;
+}
+
+.footerhome {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+.footerhome .titulo2home {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerhome .titulo2home::selection {
+  color: red;
+}
+
+.footerhome #instagramhome,
+.footerhome .whatsapphome,
+.footerhome .facebookhome {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant: normal;
+}
+
+.footerhome .titulo3home {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerhome .titulo3home::selection {
+  color: red;
+}
+
+header h1 {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+header h1::selection {
+  color: red;
+}
+
+header .navbar {
+  background-color: aquamarine;
+  color: black;
+  text-shadow: 1px 1px 5px red;
+  text-transform: capitalize;
+  height: auto;
+}
+
+header .btn-info {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+header .btn-info:hover {
+  color: blue;
+  background-color: black;
+}
+
+h2 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+h2::selection {
+  color: red;
+}
+
+form {
+  font-size: 20px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: 1px 1px 5px red;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration-color: black;
+  text-transform: capitalize;
+}
+
+h3 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+h3::selection {
+  color: red;
+}
+
+section div .card-title {
+  text-align: left;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+section div .card-title::selection {
+  color: red;
+}
+
+section div .card-text {
+  text-align: left;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+section div .card-text::selection {
+  color: red;
+}
+
+section div .btn-primary {
+  color: white;
+  background-color: blue;
+  text-transform: capitalize;
+}
+
+.footercontacto {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+.footercontacto h3 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footercontacto h3::selection {
+  color: red;
+}
+
+.footercontacto #instagramcontacto,
+.footercontacto #whatsappcontacto,
+.footercontacto #facebookcontacto {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant: normal;
+}
+
+.footercontacto .titulo4contacto {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footercontacto .titulo4contacto::selection {
+  color: red;
+}
+
+.bodyservicios {
+  background-image: url(./multimedia/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bodyservicios .headerservicios {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  font-family: "Kanit", sans-serif;
+  margin: 15px;
+}
+
+.bodyservicios .titulo1servicios {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.bodyservicios .titulo1servicios::selection {
+  color: red;
+}
+
+.bodyservicios .navbar {
+  background-color: aquamarine;
+  color: black;
+  text-shadow: 1px 1px 5px red;
+  text-transform: capitalize;
+  height: auto;
+}
+
+.bodyservicios .btn-info {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+.bodyservicios .btn-info:hover {
+  color: blue;
+  background-color: black;
+}
+
+main .h2servicios {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-align: left;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+main h2servicios::selection {
+  color: red;
+}
+
+main .parrafo1servicios {
+  color: black;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-size: 20px;
+  padding: 20px;
+  height: auto;
+  width: auto;
+  border-radius: 12px;
+}
+
+main .listaservicios {
+  background-color: aquamarine;
+  color: black;
+  font-size: 20px;
+  padding: 30px;
+  border: 12px solid black;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.imagenesservicios {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.cajaservicios {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  margin: 12px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 200px);
+}
+
+.caja {
+  border: 12px solid blue;
+  color: white;
+  width: 80%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: black;
+  box-shadow: 1px 1px 5px red;
+  filter: grayscale(100%);
+}
+
+.caja:hover {
+  transition: all 0.7s;
+  transform: scale(1, 1);
+  filter: grayscale(0%);
+}
+
+.caja1 {
+  background-image: url(./multimedia/audi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.caja2 {
+  background-image: url(./multimedia/cambiarfiltroaceite.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.caja3 {
+  background-image: url(./multimedia/neumaticos.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.caja4 {
+  background-image: url(./multimedia/bateria.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sec {
+  width: 100%;
+}
+
+.carousel-indicators li {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  border: 2px solid aqua;
+}
+
+.footerservicios {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+.footerservicios .titulo2servicios {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerservicios .titulos2servicios::selection {
+  color: red;
+}
+
+.footerservicios #instagramservicios,
+.footerservicios #whatsappservicios,
+.footerservicios #facebookservicios {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant: normal;
+}
+
+.footerservicios .titulo3servicios {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerservicios .titulos3servicios::selection {
+  color: red;
+}
+
+header h1 {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+header h1::selection {
+  color: red;
+}
+
+header .navbar {
+  background-color: aquamarine;
+  color: black;
+  text-shadow: 1px 1px 5px red;
+  text-transform: capitalize;
+  height: auto;
+}
+
+header .btn-info {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+header .btn-info:hover {
+  color: blue;
+  background-color: black;
+}
+
+main .cualesbeneficios {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px red;
+}
+
+main .beneficio {
+  height: 60px;
+  width: 500px;
+  background-color: aqua;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: 5px solid black;
+}
+
+main #beneficio1 {
+  transition: height 2.7s;
+}
+
+main #beneficio1:hover {
+  height: 300px;
+  width: 500px;
+}
+
+main #beneficio2 {
+  transition: height 2.7s;
+}
+
+main #beneficio2:hover {
+  height: 300px;
+  width: 500px;
+}
+
+main #beneficio3 {
+  transition: height 2.7s, width 0.7s;
+}
+
+main #beneficio3:active {
+  height: 200px;
+  width: 800px;
+}
+
+main #beneficio4 {
+  transition: all 2.7s;
+}
+
+main #beneficio4:hover {
+  background-color: red;
+  height: 100px;
+  width: 800px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  transition: all 2.7s;
+}
+
+main .sec {
+  width: 100%;
+}
+
+main .carousel-indicators li {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  border: 2px solid aqua;
+}
+
+.footerbeneficios {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+.footerbeneficios h3 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerbeneficios h3::selection {
+  color: red;
+}
+
+.footerbeneficios #instagrambeneficios,
+.footerbeneficios #whatsappbeneficios,
+.footerbeneficios #facebookbeneficios {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant: normal;
+}
+
+.footerbeneficios .titulo4beneficios {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerbeneficios .titulo4beneficios::selection {
+  color: red;
+}
+
+header h1 {
+  color: black;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration-style: solid;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+header h1::selection {
+  color: red;
+}
+
+header .navbar {
+  background-color: aquamarine;
+  color: black;
+  text-shadow: 1px 1px 5px red;
+  text-transform: capitalize;
+  height: auto;
+}
+
+header .btn-info {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+header .btn-info:hover {
+  color: blue;
+  background-color: black;
+}
+
+section .ar {
+  background-color: aquamarine;
+  background-image: url(./multimedia/ayuda.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+section .al {
+  background-color: aquamarine;
+  color: black;
+  height: 100%;
+}
+
+section .tituloayuda {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  text-shadow: 1px 1px 5px red;
+}
+
+section .tituloayuda::selection {
+  color: red;
+}
+
+section .parrafo1ayuda {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+section .parrafo1ayuda .listaayuda {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-weight: 900;
+}
+
+$mapa: (
+  10px: red,
+  20px: blue,
+  30px: orange,
+  40px: darkgreen,
+  50px: black,
+);
+
+@each $font, $color in $mapa {
+  .btn--#{$font} {
+    background-color: aquamarine;
+    color: $color;
+    font-size: $font;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    height: 70%;
+    width: 100%;
+    border: 8px solid black;
+    text-transform: uppercase;
+  }
+}
+
+.footerayuda {
+  background-color: aquamarine;
+  color: black;
+  border: 12px solid black;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+}
+
+.footerayuda h3 {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerayuda h3::selection {
+  color: red;
+}
+
+.footerayuda #instagramayuda,
+.footerayuda #whatsappayuda,
+.footerayuda #facebookayuda {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-variant: normal;
+}
+
+.footerayuda .titulo4ayuda {
+  color: black;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: underline;
+  font-weight: bolder;
+  text-shadow: 1px 1px 5px red;
+  font-family: "Kanit", sans-serif;
+  text-transform: capitalize;
+}
+
+.footerayuda .titulo4ayuda::selection {
+  color: red;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 200px;
+  }
+  .item {
+    width: 100vh;
+    height: 100vh;
+  }
+  .video1 {
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+    width: fit-content;
+  }
+  .video2 {
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+    width: fit-content;
+  }
+  .imagen1 {
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+    width: 300px;
+  }
+  .imagen2 {
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+    width: 300px;
+  }
+  .imagen3 {
+    border: 12px solid blue;
+    padding: 0;
+    border-radius: 12px;
+    width: 300px;
+  }
+  .ubicacion {
+    width: fit-content;
+  }
+  .cajaservicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .headerservicios {
+    width: 150vh;
     height: auto;
-    border-radius: $tamaño1;
-    font-family: 'Kanit', sans-serif;
-
-    h1{
-        color: $color4;
-        text-decoration: underline;
-        font-style: normal;
-        font-weight: bolder;
-        text-align: center;
-        text-decoration-style: solid;
-        text-shadow: 1px 1px 5px $color1;
-        font-family: 'Kanit', sans-serif;
-        font-size: $tamaño6;
-        text-transform: capitalize;
-    }
-    h1::selection{
-        color: $color1;
-    }
-
-    h2{
-        color: $color4;
-        font-size: $tamaño3;
-        font-style: normal;
-        text-decoration: underline;
-        font-weight: bolder;
-        text-align: left;
-        text-shadow: 1px 1px 5px $color1;
-        font-family: 'Kanit', sans-serif;
-        text-transform: capitalize;
-    }
-    h2::selection{
-        color: $color1;
-    }
-
-    ul li{
-        font-size: $tamaño3;
-        font-style: normal;
-        font-weight: bolder;  
-    }
-    .barra li{
-        list-style-type: none;
-        display: inline-block;
-    }
-    .barra a{
-        text-decoration: none;
-        text-shadow: 1px 1px 5px $color4;
-        text-transform: capitalize;
-    }
-    .barra a:hover{
-        color: $color4;
-    }
-}
-
-main{
-    h2{
-        color: $color4;
-        font-size: $tamaño3;
-        font-style: normal;
-        text-decoration: underline;
-        font-weight: bolder;
-        text-align: left;
-        text-shadow: 1px 1px 5px $color1;
-        font-family: 'Kanit', sans-serif;
-        text-transform: capitalize;
-    }
-    h2::selection{
-        color: $color1;
-    }
-
-    .parrafo1{
-        color: $color4;
-        background-color: $color2;
-        border: $tamaño1 solid $color4;
-        font-size: $tamaño2;
-        padding: $tamaño2;
-        height: auto;
-        width: auto;
-        border-radius: $tamaño1;
-    }
-    .parrafo2{
-        color: $color4;
-        background-color: $color2;
-        border: $tamaño1 solid $color4;
-        font-size: $tamaño2;
-        padding: $tamaño2;
-        height: auto;
-        width: auto;
-        border-radius: $tamaño1;
-    }
-
-    .video1{
-        border: $tamaño1 solid $color3;
-        padding:0;
-        border-radius: $tamaño1;
-    }
-    .video2{
-        border: $tamaño1 solid $color3;
-        padding: 0;
-        border-radius: $tamaño1;
-    }
-    .imagen1{
-        border: $tamaño1 solid $color3;
-        padding: 0;
-        border-radius: $tamaño1 ;
-    }
-    .imagen2{
-        border: $tamaño1 solid $color3;
-        padding:0;
-        border-radius: $tamaño1;
-    }
-    .imagen3{
-        border: $tamaño1 solid $color3;
-        padding:0;
-        border-radius: $tamaño1;
-    }
-    .titulogaleria{
-        text-align: left;
-        text-shadow: 1px 1px 5px $color1;
-        font-size: $tamaño5;
-        font-family: 'Kanit', sans-serif;
-        text-decoration: underline;
-        color: $color4;
-        font-weight: bolder;
-        font-size: $tamaño3;
-        text-transform: capitalize;
-    }
-    .galeria{
-        display: grid;
-        width: ($var2)+ ($var4);
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(4,200px);
-        grid-gap: $tamaño2;
-        min-height: 100vh;
-        padding: 10px;
-    }
-    .item{
-        width: ($var2) + ($var4);
-        background-color: $color4;
-        border: 10px solid dark$color3;
-        filter: grayscale(($var2) + ($var4));
-        border-radius: $tamaño1;
-        box-shadow: 1px 1px 5px $color1;
-    }
-    .item:hover{
-        transform: scale(1,1);
-        transition: all 0,8s;
-        filter: grayscale(0%);
-    }
-    .item1{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item2{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item3{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item4{
-        background-image: url(./multimedia/corvette.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item5{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item6{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item7{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item8{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item9{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item10{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item11{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-    .item12{
-        background-image: url(./multimedia/audi.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 40vh !important;
-    }
-}
-
-footer{
-    background-color: $color2;
-    color: $color4;
-    border: $tamaño1 solid $color4;
-    font-size: $tamaño2;
-    width: auto;
+  }
+  .h2servicios {
+    width: 100%;
     height: auto;
-    border-radius: $tamaño1;
-
-    h3{
-        color: $color4;
-        font-size: $tamaño3;
-        font-style: normal;
-        text-decoration: underline;
-        font-weight: bolder;
-        text-shadow: 1px 1px 5px $color1;
-        font-family: 'Kanit', sans-serif;
-        text-transform: capitalize;
-    }
-    h3::selection{
-        color: $color1;
-    }
-
-    #Instagram01{
-        text-decoration: underline;
-        font-weight: bolder;
-        font-variant: normal;
-    }
-    #Facebook02{
-    @extend #Instagram01
-    }
-    #Whatsapp03{
-    @extend #Instagram01
-    }
-    
+  }
+  .parrafo1servicios {
+    width: 150vh;
+    height: auto;
+  }
+  .listaservicios {
+    width: 150vh;
+    height: auto;
+  }
+  .footerservicios {
+    width: 150vh;
+    height: auto;
+  }
+  .headerhome {
+    width: 100vh;
+    height: auto;
+  }
+  .footerhome {
+    width: 120vh;
+    height: auto;
+  }
 }
+/*# sourceMappingURL=archivo.css.map */
 
-.bodyhome{
-    background-image: url(./multimedia/fondo.jpg);
-    background-position: center;
-    background-size: cover;
-}
-    .headerhome{
-        background-color: $color2;
-        color: $color4;
-        border: $tamaño1 solid $color4;
-        font-size: $tamaño2;
-        width: auto;
-        height: auto;
-        border-radius: $tamaño1;
-        font-family: 'Kanit', sans-serif;
-        margin: 15px;
-
-        .titulo1home{
-            color: $color4;
-            text-decoration: underline;
-            font-style: normal;
-            font-weight: bolder;
-            text-align: center;
-            text-decoration-style: solid;
-            text-shadow: 1px 1px 5px $color1;
-            font-family: 'Kanit', sans-serif;
-            font-size: $tamaño6;
-            text-transform: capitalize;
-        }
-        .titulo1home::selection{
-            color: $color1;
-        }
-        .navbar{
-            background-color: $color2;
-            color: $color4;
-            text-shadow: 1px 1px 5px $color1;
-            text-transform: capitalize;
-            height: auto;
-        }
-    }
-
-    div{
-        h1{
-            color: $color4;
-            text-decoration: underline;
-            font-style: normal;
-            font-weight: bolder;
-            text-align: center;
-            text-decoration-style: solid;
-            text-shadow: 1px 1px 5px $color1;
-            font-family: 'Kanit', sans-serif;
-            font-size: $tamaño6;
-            text-transform: capitalize;
-        }
-        h1::selection{
-            color: $color1;
-        }
-        .jumbotron{
-            background-image: url(./multimedia/escarabajorojo.jpg);
-            background-position: center;
-            background-size: cover;
-            height: ($var2) + ($var4);
-            width: 80%;
-        }
-        .titulojumbotron{
-            font-size: $tamaño2;
-            font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            text-shadow: 0px 0px 5px $color4;
-            color: $color2;
-            text-decoration: none;
-        }
-        .parrafojumbotron{
-            font-size: $tamaño4;
-            font-family: Arial, Helvetica, sans-serif;
-            color: $color1;
-            font-weight: bold;
-        }
-        .parrafojumbotron::selection{
-            color: darkturquoise;
-        }
-        .btn-info{
-            color: $color4;
-            text-transform: capitalize;
-            font-weight: bold;
-            font-family: 'Kanit', sans-serif;
-        }
-        .btn-info:hover{
-            color: $color3;
-            background-color: $color4;
-        }
-    }
-        h1{
-            color: $color4;
-            text-decoration: underline;
-            font-style: normal;
-            font-weight: bolder;
-            text-align: center;
-            text-decoration-style: solid;
-            text-shadow: 1px 1px 5px $color1;
-            font-family: 'Kanit', sans-serif;
-            font-size: $tamaño6;
-            text-transform: capitalize;
-        }
-        h1::selection{
-            color: $color1;
-        }
-
-        section{
-            div{
-                div{
-                    .card-title{
-                        text-align: left;
-                        font-size: $tamaño2;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-weight: bold;
-                        text-decoration: underline;
-                        text-transform: capitalize;
-                    }
-                    .card-title::selection{
-                        color: $color1;
-                    }
-                    .card-text{
-                        text-align: left;
-                        font-size: 16px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        text-transform: capitalize;
-                        font-weight: bold;
-                        font-style: oblique;
-                    }
-                    .card-text::selection{
-                        color: $color1;
-                    }
-                }
-            }
-        }
-        
-        .footerhome{
-            background-color: $color2;
-            color: $color4;
-            border: $tamaño1 solid $color4;
-            font-size: $tamaño2;
-            width: auto;
-            height: auto;
-            border-radius: $tamaño1;
-            
-                .titulo2home{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                .titulo2home::selection{
-                    color: $color1;
-                }
-                #instagramhome{
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    font-variant: normal;
-                }
-                .facebookhome{
-                @extend #instagramhome
-                }
-                .titulo3home{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                .titulo3home::selection{
-                    color: $color1;
-                }
-                .whatsapphome{
-                    @extend #instagramhome
-                }
-            }
-
-
-        header{
-            h1{
-                color: $color4;
-                text-decoration: underline;
-                font-style: normal;
-                font-weight: bolder;
-                text-align: center;
-                text-decoration-style: solid;
-                text-shadow: 1px 1px 5px $color1;
-                font-family: 'Kanit', sans-serif;
-                font-size: $tamaño6;
-                text-transform: capitalize;
-            }
-            h1::selection{
-                color: $color1;
-            }
-            .navbar{
-                background-color: $color2;
-                color: $color4;
-                text-shadow: 1px 1px 5px $color1;
-                text-transform: capitalize;
-                height: auto;
-            }
-            .btn-info{
-                color: $color4;
-                text-transform: capitalize;
-                font-weight: bold;
-                font-family: 'Kanit', sans-serif;
-            }
-            .btn-info:hover{
-                color: $color3;
-                background-color: $color4;
-            }
-        }
-            h2{
-                color: $color4;
-                font-size: $tamaño3;
-                font-style: normal;
-                text-decoration: underline;
-                font-weight: bolder;
-                text-align: left;
-                text-shadow: 1px 1px 5px $color1;
-                font-family: 'Kanit', sans-serif;
-                text-transform: capitalize;
-            }
-            h2::selection{
-                color: $color1;
-            }
-            form{
-                font-size: $tamaño2;
-                font-family:'Kanit', sans-serif;
-                text-shadow: 1px 1px 5px $color1;
-                text-decoration: underline;
-                font-style: italic;
-                font-weight: bold;
-                text-decoration-color: $color4;
-                text-transform: capitalize;
-            }
-            h3{
-                color: $color4;
-                font-size: $tamaño3;
-                font-style: normal;
-                text-decoration: underline;
-                font-weight: bolder;
-                text-shadow: 1px 1px 5px $color1;
-                font-family: 'Kanit', sans-serif;
-                text-transform: capitalize;
-            }
-            h3::selection{
-                color: $color1;
-            }
-            section{
-                div{
-                    .card-title{
-                        text-align: left;
-                        font-size: $tamaño2;
-                        font-family: Arial, Helvetica, sans-serif;
-                        font-weight: bold;
-                        text-decoration: underline;
-                        text-transform: capitalize;
-                    }
-                    .card-title::selection{
-                        color: $color1;
-                    }
-                    .card-text{
-                        text-align: left;
-                        font-size: 16px;
-                        font-family: Arial, Helvetica, sans-serif;
-                        text-transform: capitalize;
-                        font-weight: bold;
-                        font-style: oblique;
-                    }
-                    .card-text::selection{
-                        color: $color1;
-                    }
-                    .btn-primary{
-                        color: $color5;
-                        background-color: $color3;
-                        text-transform: capitalize;
-                    }
-                }
-            }
-                    .footercontacto{
-                        background-color: $color2;
-                        color: $color4;
-                        border: $tamaño1 solid $color4;
-                        font-size: $tamaño2;
-                        width: auto;
-                        height: auto;
-                        border-radius: $tamaño1;
-                        h3{
-                            color: $color4;
-                            font-size: $tamaño3;
-                            font-style: normal;
-                            text-decoration: underline;
-                            font-weight: bolder;
-                            text-shadow: 1px 1px 5px $color1;
-                            font-family: 'Kanit', sans-serif;
-                            text-transform: capitalize;
-                        }
-                        h3::selection{
-                            color: $color1;
-                        }
-                        #instagramcontacto{
-                            text-decoration: underline;
-                            font-weight: bolder;
-                            font-variant: normal; 
-                        }
-                        #facebookcontacto{
-                            @extend #instagramcontacto 
-                        }
-                        .titulo4contacto{
-                            color: $color4;
-                            font-size: $tamaño3;
-                            font-style: normal;
-                            text-decoration: underline;
-                            font-weight: bolder;
-                            text-shadow: 1px 1px 5px $color1;
-                            font-family: 'Kanit', sans-serif;
-                            text-transform: capitalize;
-                        }
-                        .titulo4contacto::selection{
-                            color: $color1;
-                        }
-                        #whatsappcontacto{
-                            @extend #instagramcontacto 
-                        }
-                        
-            }
-            .bodyservicios{
-                background-image: url(./multimedia/fondo.jpg);
-                background-position: center;
-                background-size: cover;
-                .headerservicios{
-                    background-color: $color2;
-                    color: $color4;
-                    border: $tamaño1 solid $color4;
-                    font-size: $tamaño2;
-                    width: auto;
-                    height: auto;
-                    border-radius: $tamaño1;
-                    font-family: 'Kanit', sans-serif;
-                    margin: 15px;
-                }
-                .titulo1servicios{
-                    color: $color4;
-                    text-decoration: underline;
-                    font-style: normal;
-                    font-weight: bolder;
-                    text-align: center;
-                    text-decoration-style: solid;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    font-size: $tamaño6;
-                    text-transform: capitalize;
-                }
-                .titulo1servicios::selection{
-                    color: $color1;
-                }
-                .navbar{
-                    background-color: $color2;
-                    color: $color4;
-                    text-shadow: 1px 1px 5px $color1;
-                    text-transform: capitalize;
-                    height: auto;
-                }
-                .btn-info{
-                    color: $color4;
-                    text-transform: capitalize;
-                    font-weight: bold;
-                    font-family: 'Kanit', sans-serif;
-                }
-                .btn-info:hover{
-                    color: $color3;
-                    background-color: $color4;
-                }
-            }
-            main{
-                .h2servicios{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-align: left;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                h2servicios::selection{
-                    color: $color1;
-                }
-                .parrafo1servicios{
-                    color: $color4;
-                    background-color: $color2;
-                    border: $tamaño1 solid $color4;
-                    font-size: $tamaño2;
-                    padding: $tamaño2;
-                    height: auto;
-                    width: auto;
-                    border-radius: $tamaño1;
-                }
-                .listaservicios{
-                    background-color: $color2;
-                    color: $color4;
-                    font-size: $tamaño2;
-                    padding: $tamaño5;
-                    border: $tamaño1 solid $color4;
-                    border-radius: $tamaño1;
-                    margin: $tamaño2;
-                }
-            }
-            
-            .imagenesservicios{
-                color: $color4;
-                font-size: $tamaño3;
-                font-style: normal;
-                text-decoration: underline;
-                font-weight: bolder;
-                text-shadow: 1px 1px 5px $color1;
-                font-family: 'Kanit', sans-serif;
-                text-transform: capitalize;
-            }
-            .cajaservicios{
-                display: grid;
-                width: ($var2) + ($var4);
-                height: 100vh;
-                padding: 10px;
-                margin: $tamaño1;
-                grid-gap:10px;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(2,200px);
-            }
-            .caja{
-                border: $tamaño1 solid $color3;
-                color: $color5;
-                width: 80%;
-                height: ($var2) + ($var4);
-                border-radius: $tamaño1;
-                background-color: $color4;
-                box-shadow: 1px 1px 5px $color1;
-                filter: grayscale(($var2) + ($var4));
-            }
-            .caja:hover{
-                transition: all 0.7s;
-                transform: scale(1,1);
-                filter: grayscale(0%);
-            }
-            .caja1{
-                background-image:url(./multimedia/audi.jpg);
-                background-position: center;
-                background-size: cover;
-            }
-            .caja2{
-                background-image: url(./multimedia/cambiarfiltroaceite.webp);
-                background-position: center;
-                background-size: cover;
-            }
-            .caja3{
-                background-image: url(./multimedia/neumaticos.jpg);
-                background-position: center;
-                background-size: cover;
-            }
-            .caja4{
-                background-image: url(./multimedia/bateria.jpg);
-                background-position: center;
-                background-size: cover;
-            }
-            .sec{
-                width: ($var2) + ($var4);
-            }
-            .carousel-indicators li{
-                height: 5vh;
-                width: 5vh;
-                border-radius: $var3;
-                border: 2px solid aqua;
-            }
-            .footerservicios{
-                background-color: $color2;
-                color: $color4;
-                border: $tamaño1 solid $color4;
-                font-size: $tamaño2;
-                width: auto;
-                height: auto;
-                border-radius: $tamaño1;
-                .titulo2servicios{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                .titulos2servicios::selection{
-                    color:$color1
-                }
-                #instagramservicios{
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    font-variant: normal;
-                }
-                #facebookservicios{
-                   @extend #instagramservicios
-                }
-                .titulo3servicios{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                .titulos3servicios::selection{
-                    color: $color1;
-                }
-                #whatsappservicios{
-                   @extend #instagramservicios
-                }
-            }
-            header{
-                h1{
-                    color: $color4;
-                    text-decoration: underline;
-                    font-style: normal;
-                    font-weight: bolder;
-                    text-align: center;
-                    text-decoration-style: solid;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    font-size: $tamaño6;
-                    text-transform: capitalize;
-                }
-                h1::selection{
-                    color: $color1;
-                }
-                .navbar{
-                    background-color: $color2;
-                    color: $color4;
-                    text-shadow: 1px 1px 5px $color1;
-                    text-transform: capitalize;
-                    height: auto;
-                }
-                .btn-info{
-                    color: $color4;
-                    text-transform: capitalize;
-                    font-weight: bold;
-                    font-family: 'Kanit', sans-serif;
-                }
-                .btn-info:hover{
-                    color: $color3;
-                    background-color: $color4;
-                }
-            }
-            main{
-                .cualesbeneficios{
-                    text-align: center;
-                    font-size: 50px;
-                    text-decoration: underline;
-                    text-shadow: 1px 1px 5px $color1;
-                }
-                .beneficio{
-                    height: 60px;
-                    width: 500px;
-                    background-color: aqua;
-                    text-align: center;
-                    font-size: $tamaño5;
-                    padding: 10px;
-                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    border: 5px solid $color4;
-                }
-                #beneficio1{
-                    transition: height 2.7s;
-                }
-                #beneficio1:hover{
-                    height: 300px;
-                    width: 500px;
-                }
-                #beneficio2{
-                    transition: height 2.7s;
-                }
-                #beneficio2:hover{
-                    height: 300px;
-                    width: 500px;
-                }
-                #beneficio3{
-                    transition: height 2.7s, width 0.7s;
-                }
-                #beneficio3:active{
-                    height: 200px;
-                    width: 800px;
-                }
-                #beneficio4{
-                    transition: all 2.7s;
-                }
-                #beneficio4:hover{
-                    background-color: $color1;
-                    height: 100px;
-                    width: 800px;
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    font-size: $tamaño6;
-                    transition: all 2.7s;
-                }
-                .sec{
-                    width: ($var2) + ($var4);
-                }
-                .carousel-indicators li{
-                    height: 5vh;
-                    width: 5vh;
-                    border-radius: $var3;
-                    border: 2px solid aqua;
-                }
-            }
-            .footerbeneficios{
-                background-color: $color2;
-                color: $color4;
-                border: $tamaño1 solid $color4;
-                font-size: $tamaño2;
-                width: auto;
-                height: auto;
-                border-radius: $tamaño1;
-
-                h3{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                h3::selection{
-                    color: $color1;
-                }
-
-                #instagrambeneficios{
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    font-variant: normal; 
-                }
-
-                #facebookbeneficios{
-                    @extend #instagrambeneficios 
-                }
-
-                .titulo4beneficios{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-
-                .titulo4beneficios::selection{
-                    color: $color1;
-                }
-
-                #whatsappbeneficios{
-                    @extend #instagrambeneficios 
-                }
-            }
-            
-            header{
-                h1{
-                    color: $color4;
-                    text-decoration: underline;
-                    font-style: normal;
-                    font-weight: bolder;
-                    text-align: center;
-                    text-decoration-style: solid;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    font-size: $tamaño6;
-                    text-transform: capitalize;
-                }
-                h1::selection{
-                    color: $color1;
-                }
-                .navbar{
-                    background-color: $color2;
-                    color: $color4;
-                    text-shadow: 1px 1px 5px $color1;
-                    text-transform: capitalize;
-                    height: auto;
-                }
-                .btn-info{
-                    color: $color4;
-                    text-transform: capitalize;
-                    font-weight: bold;
-                    font-family: 'Kanit', sans-serif;
-                }
-                .btn-info:hover{
-                    color: $color3;
-                    background-color: $color4;
-                }
-            }
-            
-            section{
-                    .ar{
-                    background-color: aquamarine;
-                    background-image: url(./multimedia/ayuda.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    height: 80vh;
-                    }
-                    .al{
-                    background-color: aquamarine;
-                    color: black;
-                    height: 100%;
-                    }
-                    .tituloayuda{
-                        text-align: center;
-                        font-size: 50px;
-                        text-decoration: underline;
-                        text-shadow: 1px 1px 5px $color1;
-                    }
-                    .tituloayuda::selection{
-                        color: $color1;
-                    }
-                    .parrafo1ayuda{
-                        font-size: $tamaño2;
-                        font-family: 'Times New Roman', Times, serif;
-                        color: $color4;
-
-                        .listaayuda{
-                            font-size: $tamaño2;
-                            font-family: 'Times New Roman', Times, serif;
-                            color: $color4;
-                            font-weight: 900;
-                        }
-                    }
-                }
-
-            .footerayuda{
-                background-color: $color2;
-                color: $color4;
-                border: $tamaño1 solid $color4;
-                font-size: $tamaño2;
-                width: auto;
-                height: auto;
-                border-radius: $tamaño1;
-
-                h3{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                h3::selection{
-                    color: $color1;
-                }
-
-                #instagramayuda{
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    font-variant: normal; 
-                }
-
-                #facebookayuda{
-                @extend #instagramayuda 
-                }
-
-                .titulo4ayuda{
-                    color: $color4;
-                    font-size: $tamaño3;
-                    font-style: normal;
-                    text-decoration: underline;
-                    font-weight: bolder;
-                    text-shadow: 1px 1px 5px $color1;
-                    font-family: 'Kanit', sans-serif;
-                    text-transform: capitalize;
-                }
-                .titulo4ayuda::selection{
-                    color: $color1;
-                }
-
-                #whatsappayuda{
-                    @extend #instagramayuda
-                }
-            }
-
-            @media only screen and (min-width:320px) and (max-width:768px){
-                .galeria{
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows:auto;
-                    width: 200px;
-                }
-                .item{
-                    width: 100vh;
-                    height: 100vh;
-                }
-                .video1{
-                    border: $tamaño1 solid $color3;
-                    padding:0;
-                    border-radius: $tamaño1;
-                    width: fit-content;
-                }
-                .video2{
-                border: $tamaño1 solid $color3;
-                padding: 0;
-                border-radius: $tamaño1;
-                width: fit-content;
-                }
-                .imagen1{
-                    border: $tamaño1 solid $color3;
-                    padding: 0;
-                    border-radius: $tamaño1;
-                    width: 300px;
-                }
-                .imagen2{
-                    border: $tamaño1 solid $color3;
-                    padding:0;
-                    border-radius: $tamaño1;
-                    width:300px;
-                }
-                .imagen3{
-                    border: $tamaño1 solid $color3;
-                    padding:0;
-                    border-radius: $tamaño1;
-                    width: 300px;
-                }
-                .ubicacion{
-                    width: fit-content;
-                }
-                .cajaservicios{
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto;
-                    width: ($var2) + ($var4);
-                }
-                .headerservicios{
-                    width: 150vh;
-                    height: auto;
-                }
-                .h2servicios{
-                    width: ($var2) + ($var4);
-                    height: auto;
-                }
-                .parrafo1servicios{
-                    width: 150vh;
-                    height: auto;
-                }
-                .listaservicios{
-                    width: 150vh;
-                    height: auto;
-                }
-                .footerservicios{
-                    width: 150vh;
-                    height: auto;
-                }
-                .headerhome{
-                    width: 100vh;
-                    height: auto;
-                }
-                .footerhome{
-                    width: 120vh;
-                    height: auto;
-                }
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=archivo.scss.map */

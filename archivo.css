@@ -25,6 +25,7 @@ header {
   border-radius: 12px;
   font-family: "Kanit", sans-serif;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
@@ -37,9 +38,11 @@ header h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 header h1::selection {
   color: red;
 }
+
 header h2 {
   color: black;
   font-size: 26px;
@@ -51,23 +54,28 @@ header h2 {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 header h2::selection {
   color: red;
 }
+
 header ul li {
   font-size: 26px;
   font-style: normal;
   font-weight: bolder;
 }
+
 header .barra li {
   list-style-type: none;
   display: inline-block;
 }
+
 header .barra a {
   text-decoration: none;
   text-shadow: 1px 1px 5px black;
   text-transform: capitalize;
 }
+
 header .barra a:hover {
   color: black;
 }
@@ -83,9 +91,11 @@ main h2 {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 main h2::selection {
   color: red;
 }
+
 main .parrafo1 {
   color: black;
   background-color: aquamarine;
@@ -96,6 +106,7 @@ main .parrafo1 {
   width: auto;
   border-radius: 12px;
 }
+
 main .parrafo2 {
   color: black;
   background-color: aquamarine;
@@ -106,31 +117,37 @@ main .parrafo2 {
   width: auto;
   border-radius: 12px;
 }
+
 main .video1 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .video2 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .imagen1 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .imagen2 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .imagen3 {
   border: 12px solid blue;
   padding: 0;
   border-radius: 12px;
 }
+
 main .titulogaleria {
   text-align: left;
   text-shadow: 1px 1px 5px red;
@@ -142,6 +159,7 @@ main .titulogaleria {
   font-size: 26px;
   text-transform: capitalize;
 }
+
 main .galeria {
   display: grid;
   width: 100%;
@@ -151,6 +169,7 @@ main .galeria {
   min-height: 100vh;
   padding: 10px;
 }
+
 main .item {
   width: 100%;
   background-color: black;
@@ -159,77 +178,90 @@ main .item {
   border-radius: 12px;
   box-shadow: 1px 1px 5px red;
 }
+
 main .item:hover {
   transform: scale(1, 1);
   transition: all 0, 8s;
   filter: grayscale(0%);
 }
+
 main .item1 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item2 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item3 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item4 {
   background-image: url(./multimedia/corvette.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item5 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item6 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item7 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item8 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item9 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item10 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item11 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
+
 main .item12 {
   background-image: url(./multimedia/audi.jpg);
   background-position: center;
@@ -246,6 +278,7 @@ footer {
   height: auto;
   border-radius: 12px;
 }
+
 footer h3 {
   color: black;
   font-size: 26px;
@@ -256,14 +289,19 @@ footer h3 {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 footer h3::selection {
   color: red;
 }
-footer #Instagram01, footer #Whatsapp03, footer #Facebook02 {
+
+footer #Instagram01,
+footer #Whatsapp03,
+footer #Facebook02 {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .bodyhome {
   background-image: url(./multimedia/fondo.jpg);
   background-position: center;
@@ -281,6 +319,7 @@ footer #Instagram01, footer #Whatsapp03, footer #Facebook02 {
   font-family: "Kanit", sans-serif;
   margin: 15px;
 }
+
 .headerhome .titulo1home {
   color: black;
   text-decoration: underline;
@@ -293,9 +332,11 @@ footer #Instagram01, footer #Whatsapp03, footer #Facebook02 {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 .headerhome .titulo1home::selection {
   color: red;
 }
+
 .headerhome .navbar {
   background-color: aquamarine;
   color: black;
@@ -316,9 +357,11 @@ div h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 div h1::selection {
   color: red;
 }
+
 div .jumbotron {
   background-image: url(./multimedia/escarabajorojo.jpg);
   background-position: center;
@@ -326,6 +369,7 @@ div .jumbotron {
   height: 100%;
   width: 80%;
 }
+
 div .titulojumbotron {
   font-size: 20px;
   font-weight: bold;
@@ -335,21 +379,25 @@ div .titulojumbotron {
   color: aquamarine;
   text-decoration: none;
 }
+
 div .parrafojumbotron {
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
   color: red;
   font-weight: bold;
 }
+
 div .parrafojumbotron::selection {
   color: darkturquoise;
 }
+
 div .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
+
 div .btn-info:hover {
   color: blue;
   background-color: black;
@@ -380,9 +428,11 @@ section div div .card-title {
   text-decoration: underline;
   text-transform: capitalize;
 }
+
 section div div .card-title::selection {
   color: red;
 }
+
 section div div .card-text {
   text-align: left;
   font-size: 16px;
@@ -391,6 +441,7 @@ section div div .card-text {
   font-weight: bold;
   font-style: oblique;
 }
+
 section div div .card-text::selection {
   color: red;
 }
@@ -404,6 +455,7 @@ section div div .card-text::selection {
   height: auto;
   border-radius: 12px;
 }
+
 .footerhome .titulo2home {
   color: black;
   font-size: 26px;
@@ -414,14 +466,19 @@ section div div .card-text::selection {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerhome .titulo2home::selection {
   color: red;
 }
-.footerhome #instagramhome, .footerhome .whatsapphome, .footerhome .facebookhome {
+
+.footerhome #instagramhome,
+.footerhome .whatsapphome,
+.footerhome .facebookhome {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerhome .titulo3home {
   color: black;
   font-size: 26px;
@@ -432,9 +489,11 @@ section div div .card-text::selection {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerhome .titulo3home::selection {
   color: red;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
@@ -447,9 +506,11 @@ header h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 header h1::selection {
   color: red;
 }
+
 header .navbar {
   background-color: aquamarine;
   color: black;
@@ -457,12 +518,14 @@ header .navbar {
   text-transform: capitalize;
   height: auto;
 }
+
 header .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
+
 header .btn-info:hover {
   color: blue;
   background-color: black;
@@ -518,9 +581,11 @@ section div .card-title {
   text-decoration: underline;
   text-transform: capitalize;
 }
+
 section div .card-title::selection {
   color: red;
 }
+
 section div .card-text {
   text-align: left;
   font-size: 16px;
@@ -529,9 +594,11 @@ section div .card-text {
   font-weight: bold;
   font-style: oblique;
 }
+
 section div .card-text::selection {
   color: red;
 }
+
 section div .btn-primary {
   color: white;
   background-color: blue;
@@ -547,6 +614,7 @@ section div .btn-primary {
   height: auto;
   border-radius: 12px;
 }
+
 .footercontacto h3 {
   color: black;
   font-size: 26px;
@@ -557,14 +625,19 @@ section div .btn-primary {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footercontacto h3::selection {
   color: red;
 }
-.footercontacto #instagramcontacto, .footercontacto #whatsappcontacto, .footercontacto #facebookcontacto {
+
+.footercontacto #instagramcontacto,
+.footercontacto #whatsappcontacto,
+.footercontacto #facebookcontacto {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footercontacto .titulo4contacto {
   color: black;
   font-size: 26px;
@@ -575,14 +648,17 @@ section div .btn-primary {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footercontacto .titulo4contacto::selection {
   color: red;
 }
+
 .bodyservicios {
   background-image: url(./multimedia/fondo.jpg);
   background-position: center;
   background-size: cover;
 }
+
 .bodyservicios .headerservicios {
   background-color: aquamarine;
   color: black;
@@ -594,6 +670,7 @@ section div .btn-primary {
   font-family: "Kanit", sans-serif;
   margin: 15px;
 }
+
 .bodyservicios .titulo1servicios {
   color: black;
   text-decoration: underline;
@@ -606,9 +683,11 @@ section div .btn-primary {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 .bodyservicios .titulo1servicios::selection {
   color: red;
 }
+
 .bodyservicios .navbar {
   background-color: aquamarine;
   color: black;
@@ -616,12 +695,14 @@ section div .btn-primary {
   text-transform: capitalize;
   height: auto;
 }
+
 .bodyservicios .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
+
 .bodyservicios .btn-info:hover {
   color: blue;
   background-color: black;
@@ -638,9 +719,11 @@ main .h2servicios {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 main h2servicios::selection {
   color: red;
 }
+
 main .parrafo1servicios {
   color: black;
   background-color: aquamarine;
@@ -651,6 +734,7 @@ main .parrafo1servicios {
   width: auto;
   border-radius: 12px;
 }
+
 main .listaservicios {
   background-color: aquamarine;
   color: black;
@@ -744,6 +828,7 @@ main .listaservicios {
   height: auto;
   border-radius: 12px;
 }
+
 .footerservicios .titulo2servicios {
   color: black;
   font-size: 26px;
@@ -754,14 +839,19 @@ main .listaservicios {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerservicios .titulos2servicios::selection {
   color: red;
 }
-.footerservicios #instagramservicios, .footerservicios #whatsappservicios, .footerservicios #facebookservicios {
+
+.footerservicios #instagramservicios,
+.footerservicios #whatsappservicios,
+.footerservicios #facebookservicios {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerservicios .titulo3servicios {
   color: black;
   font-size: 26px;
@@ -772,9 +862,11 @@ main .listaservicios {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerservicios .titulos3servicios::selection {
   color: red;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
@@ -787,9 +879,11 @@ header h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 header h1::selection {
   color: red;
 }
+
 header .navbar {
   background-color: aquamarine;
   color: black;
@@ -797,12 +891,14 @@ header .navbar {
   text-transform: capitalize;
   height: auto;
 }
+
 header .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
+
 header .btn-info:hover {
   color: blue;
   background-color: black;
@@ -814,6 +910,7 @@ main .cualesbeneficios {
   text-decoration: underline;
   text-shadow: 1px 1px 5px red;
 }
+
 main .beneficio {
   height: 60px;
   width: 500px;
@@ -824,30 +921,38 @@ main .beneficio {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: 5px solid black;
 }
+
 main #beneficio1 {
   transition: height 2.7s;
 }
+
 main #beneficio1:hover {
   height: 300px;
   width: 500px;
 }
+
 main #beneficio2 {
   transition: height 2.7s;
 }
+
 main #beneficio2:hover {
   height: 300px;
   width: 500px;
 }
+
 main #beneficio3 {
   transition: height 2.7s, width 0.7s;
 }
+
 main #beneficio3:active {
   height: 200px;
   width: 800px;
 }
+
 main #beneficio4 {
   transition: all 2.7s;
 }
+
 main #beneficio4:hover {
   background-color: red;
   height: 100px;
@@ -856,9 +961,11 @@ main #beneficio4:hover {
   font-size: 40px;
   transition: all 2.7s;
 }
+
 main .sec {
   width: 100%;
 }
+
 main .carousel-indicators li {
   height: 5vh;
   width: 5vh;
@@ -875,6 +982,7 @@ main .carousel-indicators li {
   height: auto;
   border-radius: 12px;
 }
+
 .footerbeneficios h3 {
   color: black;
   font-size: 26px;
@@ -885,14 +993,19 @@ main .carousel-indicators li {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerbeneficios h3::selection {
   color: red;
 }
-.footerbeneficios #instagrambeneficios, .footerbeneficios #whatsappbeneficios, .footerbeneficios #facebookbeneficios {
+
+.footerbeneficios #instagrambeneficios,
+.footerbeneficios #whatsappbeneficios,
+.footerbeneficios #facebookbeneficios {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerbeneficios .titulo4beneficios {
   color: black;
   font-size: 26px;
@@ -903,9 +1016,11 @@ main .carousel-indicators li {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerbeneficios .titulo4beneficios::selection {
   color: red;
 }
+
 header h1 {
   color: black;
   text-decoration: underline;
@@ -918,9 +1033,11 @@ header h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
+
 header h1::selection {
   color: red;
 }
+
 header .navbar {
   background-color: aquamarine;
   color: black;
@@ -928,12 +1045,14 @@ header .navbar {
   text-transform: capitalize;
   height: auto;
 }
+
 header .btn-info {
   color: black;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
+
 header .btn-info:hover {
   color: blue;
   background-color: black;
@@ -946,30 +1065,95 @@ section .ar {
   background-size: cover;
   height: 80vh;
 }
+
 section .al {
   background-color: aquamarine;
   color: black;
   height: 100%;
 }
+
 section .tituloayuda {
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
   text-shadow: 1px 1px 5px red;
 }
+
 section .tituloayuda::selection {
   color: red;
 }
+
 section .parrafo1ayuda {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   color: black;
 }
+
 section .parrafo1ayuda .listaayuda {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   color: black;
   font-weight: 900;
+}
+
+.btn--10px {
+  background-color: aquamarine;
+  color: red;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  height: 70%;
+  width: 100%;
+  border: 8px solid black;
+  text-transform: uppercase;
+}
+
+.btn--20px {
+  background-color: aquamarine;
+  color: blue;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  height: 70%;
+  width: 100%;
+  border: 8px solid black;
+  text-transform: uppercase;
+}
+
+.btn--30px {
+  background-color: aquamarine;
+  color: orange;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  height: 70%;
+  width: 100%;
+  border: 8px solid black;
+  text-transform: uppercase;
+}
+
+.btn--40px {
+  background-color: aquamarine;
+  color: darkgreen;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  height: 70%;
+  width: 100%;
+  border: 8px solid black;
+  text-transform: uppercase;
+}
+
+.btn--50px {
+  background-color: aquamarine;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  height: 70%;
+  width: 100%;
+  border: 8px solid black;
+  text-transform: uppercase;
 }
 
 .footerayuda {
@@ -981,6 +1165,7 @@ section .parrafo1ayuda .listaayuda {
   height: auto;
   border-radius: 12px;
 }
+
 .footerayuda h3 {
   color: black;
   font-size: 26px;
@@ -991,14 +1176,19 @@ section .parrafo1ayuda .listaayuda {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerayuda h3::selection {
   color: red;
 }
-.footerayuda #instagramayuda, .footerayuda #whatsappayuda, .footerayuda #facebookayuda {
+
+.footerayuda #instagramayuda,
+.footerayuda #whatsappayuda,
+.footerayuda #facebookayuda {
   text-decoration: underline;
   font-weight: bolder;
   font-variant: normal;
 }
+
 .footerayuda .titulo4ayuda {
   color: black;
   font-size: 26px;
@@ -1009,9 +1199,11 @@ section .parrafo1ayuda .listaayuda {
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
+
 .footerayuda .titulo4ayuda::selection {
   color: red;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
@@ -1089,5 +1281,7 @@ section .parrafo1ayuda .listaayuda {
     height: auto;
   }
 }
+/*# sourceMappingURL=archivo.css.map */
+/*# sourceMappingURL=archivo.scss.map */
 
 /*# sourceMappingURL=archivo.css.map */

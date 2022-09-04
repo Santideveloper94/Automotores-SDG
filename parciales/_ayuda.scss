@@ -108,6 +108,28 @@ section{
         }
     }
 
+    $mapas: (
+    10px: red,
+    20px: blue,
+    30px: orange,
+    40px: darkgreen,
+    50px: black,
+);
+
+@each $font, $color in $mapas{
+    .btn--#{$font} {
+        background-color: aquamarine;
+        color: $color;
+        font-size: $font;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        height: 70%;
+        width: 100%;
+        border: 8px solid black;
+        text-transform: uppercase;
+    }
+}
+
 .footerayuda{
     background-color: $color2;
     color: $color4;
