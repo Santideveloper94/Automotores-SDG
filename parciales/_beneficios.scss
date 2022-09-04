@@ -119,6 +119,40 @@ main{
         font-size: $tamaño6;
         transition: all 2.7s;
     }
+
+    .box{
+        background-color: aquamarine;
+        font-size: $tamaño2;
+        color: black;
+        text-align: center;
+    }
+    
+    @mixin sizes($width, $height, $bcolor){
+        width: $width;
+        height: $height;
+        background-color: $bcolor;
+    }
+    .box1{
+        @include sizes (80%, 80%, aquamarine);
+        border: 12px solid black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .box2{
+        @include sizes (80%, 80%, aquamarine);
+        border: 12px solid black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .box3{
+        @include sizes (80%, 80%, aquamarine);
+        border: 12px solid black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .box4{
+        @include sizes (80%, 80%, aquamarine);
+        border: 12px solid black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
     .sec{
         width: ($var2) + ($var4);
     }

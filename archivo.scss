@@ -8,6 +8,31 @@
   box-sizing: border-box;
 }
 
+$color1: red;
+$color2: aquamarine;
+$color3: blue;
+$color4: black;
+$color5: white;
+
+$tamaño1: 12px;
+$tamaño2: 20px;
+$tamaño3: 26px;
+$tamaño4: 28px;
+$tamaño5: 30px;
+$tamaño6: 40px;
+
+$var1: 100%;
+$var2: 75%;
+$var3: 50%;
+$var4: 25%;
+
+$fuente1: 'Kanit', sans-serif;
+$fuente2: 'Times New Roman', Times, serif;
+$fuente3:  Arial, Helvetica, sans-serif;
+$fuente4: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fuente5:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
 body {
   background-image: url(./multimedia/fondo.jpg);
   background-size: cover;
@@ -960,6 +985,39 @@ main #beneficio4:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 40px;
   transition: all 2.7s;
+}
+
+.box{
+    background-color: aquamarine;
+    font-size: $tamaño2;
+    color: black;
+    text-align: center;
+}
+
+@mixin sizes($width, $height, $bcolor){
+    width: $width;
+    height: $height;
+    background-color: $bcolor;
+}
+.box1{
+    @include sizes (80%, 80%, aquamarine);
+    border: 12px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.box2{
+    @include sizes (80%, 80%, aquamarine);
+    border: 12px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.box3{
+    @include sizes (80%, 80%, aquamarine);
+    border: 12px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.box4{
+    @include sizes (80%, 80%, aquamarine);
+    border: 12px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 main .sec {

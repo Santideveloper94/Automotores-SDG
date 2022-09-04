@@ -962,6 +962,45 @@ main #beneficio4:hover {
   transition: all 2.7s;
 }
 
+.box {
+  background-color: aquamarine;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.box1 {
+  width: 80%;
+  height: 80%;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.box2 {
+  width: 80%;
+  height: 80%;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.box3 {
+  width: 80%;
+  height: 80%;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.box4 {
+  width: 80%;
+  height: 80%;
+  background-color: aquamarine;
+  border: 12px solid black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 main .sec {
   width: 100%;
 }
