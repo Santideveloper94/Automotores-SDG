@@ -41,51 +41,51 @@ body {
 }
 
 header {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
   font-family: "Kanit", sans-serif;
 }
 
 header h1 {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 header h1::selection {
-  color: red;
+  color: $color1;
 }
 
 header h2 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
   text-align: left;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 header h2::selection {
-  color: red;
+  color: $color1;
 }
 
 header ul li {
-  font-size: 26px;
+  font-size: $tamaño3;
   font-style: normal;
   font-weight: bolder;
 }
@@ -97,111 +97,111 @@ header .barra li {
 
 header .barra a {
   text-decoration: none;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px $color4;
   text-transform: capitalize;
 }
 
 header .barra a:hover {
-  color: black;
+  color: $color4;
 }
 
 main h2 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
   text-align: left;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 main h2::selection {
-  color: red;
+  color: $color1;
 }
 
 main .parrafo1 {
-  color: black;
-  background-color: aquamarine;
-  border: 12px solid black;
-  font-size: 20px;
-  padding: 20px;
+  color: $color4;
+  background-color: $color2;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
+  padding: $tamaño2;
   height: auto;
   width: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .parrafo2 {
-  color: black;
-  background-color: aquamarine;
-  border: 12px solid black;
-  font-size: 20px;
-  padding: 20px;
+  color: $color4;
+  background-color: $color2;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
+  padding: $tamaño2;
   height: auto;
   width: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .video1 {
-  border: 12px solid blue;
+  border: $tamaño1 solid $color3;
   padding: 0;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .video2 {
-  border: 12px solid blue;
+  border: $tamaño1 solid $color3;
   padding: 0;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .imagen1 {
-  border: 12px solid blue;
+  border: $tamaño1 solid $color3;
   padding: 0;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .imagen2 {
-  border: 12px solid blue;
+  border: $tamaño1 solid $color3;
   padding: 0;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .imagen3 {
-  border: 12px solid blue;
+  border: $tamaño1 solid $color3;
   padding: 0;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .titulogaleria {
   text-align: left;
-  text-shadow: 1px 1px 5px red;
-  font-size: 30px;
+  text-shadow: 1px 1px 5px $color1;
+  font-size: $tamaño5;
   font-family: "Kanit", sans-serif;
   text-decoration: underline;
-  color: black;
+  color: $color4;
   font-weight: bolder;
-  font-size: 26px;
+  font-size: $tamaño3;
   text-transform: capitalize;
 }
 
 main .galeria {
   display: grid;
-  width: 100%;
+  width: $var1;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(4, 200px);
-  grid-gap: 20px;
+  grid-gap: $tamaño2;
   min-height: 100vh;
   padding: 10px;
 }
 
 main .item {
-  width: 100%;
-  background-color: black;
-  border: 10px solid dark blue;
-  filter: grayscale(100%);
-  border-radius: 12px;
-  box-shadow: 1px 1px 5px red;
+  width: $var1;
+  background-color: $color4;
+  border: 10px solid dark $color3;
+  filter: grayscale($var1);
+  border-radius: $tamaño1;
+  box-shadow: 1px 1px 5px $color1;
 }
 
 main .item:hover {
@@ -295,28 +295,28 @@ main .item12 {
 }
 
 footer {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 footer h3 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 footer h3::selection {
-  color: red;
+  color: $color1;
 }
 
 footer #Instagram01,
@@ -334,81 +334,81 @@ footer #Facebook02 {
 }
 
 .headerhome {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
   font-family: "Kanit", sans-serif;
   margin: 15px;
 }
 
 .headerhome .titulo1home {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 .headerhome .titulo1home::selection {
-  color: red;
+  color: $color1;
 }
 
 .headerhome .navbar {
-  background-color: aquamarine;
-  color: black;
-  text-shadow: 1px 1px 5px red;
+  background-color: $color2;
+  color: $color4;
+  text-shadow: 1px 1px 5px $color1;
   text-transform: capitalize;
   height: auto;
 }
 
 div h1 {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 div h1::selection {
-  color: red;
+  color: $color1;
 }
 
 div .jumbotron {
   background-image: url(./multimedia/escarabajorojo.jpg);
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: $var1;
   width: 80%;
 }
 
 div .titulojumbotron {
-  font-size: 20px;
+  font-size: $tamaño2;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  text-shadow: 0px 0px 5px black;
-  color: aquamarine;
+  text-shadow: 0px 0px 5px $color4;
+  color: $color2;
   text-decoration: none;
 }
 
 div .parrafojumbotron {
-  font-size: 28px;
+  font-size: $tamaño4;
   font-family: Arial, Helvetica, sans-serif;
-  color: red;
+  color: $color1;
   font-weight: bold;
 }
 
@@ -417,37 +417,37 @@ div .parrafojumbotron::selection {
 }
 
 div .btn-info {
-  color: black;
+  color: $color4;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
 
 div .btn-info:hover {
-  color: blue;
-  background-color: black;
+  color: $color3;
+  background-color: $color4;
 }
 
 h1 {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 h1::selection {
-  color: red;
+  color: $color1;
 }
 
 section div div .card-title {
   text-align: left;
-  font-size: 20px;
+  font-size: $tamaño2;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: underline;
@@ -455,7 +455,7 @@ section div div .card-title {
 }
 
 section div div .card-title::selection {
-  color: red;
+  color: $color1;
 }
 
 section div div .card-text {
@@ -468,32 +468,32 @@ section div div .card-text {
 }
 
 section div div .card-text::selection {
-  color: red;
+  color: $color1;
 }
 
 .footerhome {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 .footerhome .titulo2home {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerhome .titulo2home::selection {
-  color: red;
+  color: $color1;
 }
 
 .footerhome #instagramhome,
@@ -505,102 +505,102 @@ section div div .card-text::selection {
 }
 
 .footerhome .titulo3home {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerhome .titulo3home::selection {
-  color: red;
+  color: $color1;
 }
 
 header h1 {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 header h1::selection {
-  color: red;
+  color: $color1;
 }
 
 header .navbar {
-  background-color: aquamarine;
-  color: black;
-  text-shadow: 1px 1px 5px red;
+  background-color: $color2;
+  color: $color4;
+  text-shadow: 1px 1px 5px $color1;
   text-transform: capitalize;
   height: auto;
 }
 
 header .btn-info {
-  color: black;
+  color: $color4;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
 
 header .btn-info:hover {
-  color: blue;
-  background-color: black;
+  color: $color3;
+  background-color: $color4;
 }
 
 h2 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
   text-align: left;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 h2::selection {
-  color: red;
+  color: $color1;
 }
 
 form {
-  font-size: 20px;
+  font-size: $tamaño2;
   font-family: "Kanit", sans-serif;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   text-decoration: underline;
   font-style: italic;
   font-weight: bold;
-  text-decoration-color: black;
+  text-decoration-color: $color4;
   text-transform: capitalize;
 }
 
 h3 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 h3::selection {
-  color: red;
+  color: $color1;
 }
 
 section div .card-title {
   text-align: left;
-  font-size: 20px;
+  font-size: $tamaño2;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: underline;
@@ -608,7 +608,7 @@ section div .card-title {
 }
 
 section div .card-title::selection {
-  color: red;
+  color: $color1;
 }
 
 section div .card-text {
@@ -621,38 +621,38 @@ section div .card-text {
 }
 
 section div .card-text::selection {
-  color: red;
+  color: $color1;
 }
 
 section div .btn-primary {
-  color: white;
-  background-color: blue;
+  color: $color5;
+  background-color: $color3;
   text-transform: capitalize;
 }
 
 .footercontacto {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 .footercontacto h3 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footercontacto h3::selection {
-  color: red;
+  color: $color1;
 }
 
 .footercontacto #instagramcontacto,
@@ -664,18 +664,18 @@ section div .btn-primary {
 }
 
 .footercontacto .titulo4contacto {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footercontacto .titulo4contacto::selection {
-  color: red;
+  color: $color1;
 }
 
 .bodyservicios {
@@ -685,122 +685,122 @@ section div .btn-primary {
 }
 
 .bodyservicios .headerservicios {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
   font-family: "Kanit", sans-serif;
   margin: 15px;
 }
 
 .bodyservicios .titulo1servicios {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 .bodyservicios .titulo1servicios::selection {
-  color: red;
+  color: $color1;
 }
 
 .bodyservicios .navbar {
-  background-color: aquamarine;
-  color: black;
-  text-shadow: 1px 1px 5px red;
+  background-color: $color2;
+  color: $color4;
+  text-shadow: 1px 1px 5px $color1;
   text-transform: capitalize;
   height: auto;
 }
 
 .bodyservicios .btn-info {
-  color: black;
+  color: $color4;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
 
 .bodyservicios .btn-info:hover {
-  color: blue;
-  background-color: black;
+  color: $color3;
+  background-color: $color4;
 }
 
 main .h2servicios {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
   text-align: left;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 main h2servicios::selection {
-  color: red;
+  color: $color1;
 }
 
 main .parrafo1servicios {
-  color: black;
-  background-color: aquamarine;
-  border: 12px solid black;
-  font-size: 20px;
-  padding: 20px;
+  color: $color4;
+  background-color: $color2;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
+  padding: $tamaño2;
   height: auto;
   width: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 main .listaservicios {
-  background-color: aquamarine;
-  color: black;
-  font-size: 20px;
-  padding: 30px;
-  border: 12px solid black;
-  border-radius: 12px;
-  margin: 20px;
+  background-color: $color2;
+  color: $color4;
+  font-size: $tamaño2;
+  padding: $tamaño5;
+  border: $tamaño1 solid $color4;
+  border-radius: $tamaño1;
+  margin: $tamaño2;
 }
 
 .imagenesservicios {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .cajaservicios {
   display: grid;
-  width: 100%;
+  width: $var1;
   height: 100vh;
   padding: 10px;
-  margin: 12px;
+  margin: $tamaño1;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 200px);
 }
 
 .caja {
-  border: 12px solid blue;
-  color: white;
+  border: $tamaño1 solid $color3;
+  color: $color5;
   width: 80%;
-  height: 100%;
-  border-radius: 12px;
-  background-color: black;
-  box-shadow: 1px 1px 5px red;
-  filter: grayscale(100%);
+  height: $var1;
+  border-radius: $tamaño1;
+  background-color: $color4;
+  box-shadow: 1px 1px 5px $color1;
+  filter: grayscale($var1);
 }
 
 .caja:hover {
@@ -834,39 +834,39 @@ main .listaservicios {
 }
 
 .sec {
-  width: 100%;
+  width: $var1;
 }
 
 .carousel-indicators li {
   height: 5vh;
   width: 5vh;
-  border-radius: 50%;
+  border-radius: $var3;
   border: 2px solid aqua;
 }
 
 .footerservicios {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 .footerservicios .titulo2servicios {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerservicios .titulos2servicios::selection {
-  color: red;
+  color: $color1;
 }
 
 .footerservicios #instagramservicios,
@@ -878,62 +878,62 @@ main .listaservicios {
 }
 
 .footerservicios .titulo3servicios {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerservicios .titulos3servicios::selection {
-  color: red;
+  color: $color1;
 }
 
 header h1 {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 header h1::selection {
-  color: red;
+  color: $color1;
 }
 
 header .navbar {
-  background-color: aquamarine;
-  color: black;
-  text-shadow: 1px 1px 5px red;
+  background-color: $color2;
+  color: $color4;
+  text-shadow: 1px 1px 5px $color1;
   text-transform: capitalize;
   height: auto;
 }
 
 header .btn-info {
-  color: black;
+  color: $color4;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
 
 header .btn-info:hover {
-  color: blue;
-  background-color: black;
+  color: $color3;
+  background-color: $color4;
 }
 
 main .cualesbeneficios {
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
 }
 
 main .beneficio {
@@ -941,10 +941,10 @@ main .beneficio {
   width: 500px;
   background-color: aqua;
   text-align: center;
-  font-size: 30px;
+  font-size: $tamaño5;
   padding: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: 5px solid black;
+  border: 5px solid $color4;
 }
 
 main #beneficio1 {
@@ -979,18 +979,18 @@ main #beneficio4 {
 }
 
 main #beneficio4:hover {
-  background-color: red;
+  background-color: $color1;
   height: 100px;
   width: 800px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   transition: all 2.7s;
 }
 
 .box{
-    background-color: aquamarine;
+    background-color: $color2;
     font-size: $tamaño2;
-    color: black;
+    color: $color4;
     text-align: center;
 }
 
@@ -1000,60 +1000,60 @@ main #beneficio4:hover {
     background-color: $bcolor;
 }
 .box1{
-    @include sizes (80%, 80%, aquamarine);
-    border: 12px solid black;
+    @include sizes (80%, 80%, $color2);
+    border: $tamaño1 solid $color4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .box2{
-    @include sizes (80%, 80%, aquamarine);
-    border: 12px solid black;
+    @include sizes (80%, 80%, $color2);
+    border: $tamaño1 solid $color4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .box3{
-    @include sizes (80%, 80%, aquamarine);
-    border: 12px solid black;
+    @include sizes (80%, 80%, $color2);
+    border: $tamaño1 solid $color4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .box4{
-    @include sizes (80%, 80%, aquamarine);
-    border: 12px solid black;
+    @include sizes (80%, 80%, $color2);
+    border: $tamaño1 solid $color4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 main .sec {
-  width: 100%;
+  width: $var1;
 }
 
 main .carousel-indicators li {
   height: 5vh;
   width: 5vh;
-  border-radius: 50%;
+  border-radius: $var3;
   border: 2px solid aqua;
 }
 
 .footerbeneficios {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 .footerbeneficios h3 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerbeneficios h3::selection {
-  color: red;
+  color: $color1;
 }
 
 .footerbeneficios #instagrambeneficios,
@@ -1065,59 +1065,59 @@ main .carousel-indicators li {
 }
 
 .footerbeneficios .titulo4beneficios {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerbeneficios .titulo4beneficios::selection {
-  color: red;
+  color: $color1;
 }
 
 header h1 {
-  color: black;
+  color: $color4;
   text-decoration: underline;
   font-style: normal;
   font-weight: bolder;
   text-align: center;
   text-decoration-style: solid;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
-  font-size: 40px;
+  font-size: $tamaño6;
   text-transform: capitalize;
 }
 
 header h1::selection {
-  color: red;
+  color: $color1;
 }
 
 header .navbar {
-  background-color: aquamarine;
-  color: black;
-  text-shadow: 1px 1px 5px red;
+  background-color: $color2;
+  color: $color4;
+  text-shadow: 1px 1px 5px $color1;
   text-transform: capitalize;
   height: auto;
 }
 
 header .btn-info {
-  color: black;
+  color: $color4;
   text-transform: capitalize;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
 }
 
 header .btn-info:hover {
-  color: blue;
-  background-color: black;
+  color: $color3;
+  background-color: $color4;
 }
 
 section .ar {
-  background-color: aquamarine;
+  background-color: $color2;
   background-image: url(./multimedia/ayuda.jpg);
   background-position: center;
   background-size: cover;
@@ -1125,80 +1125,80 @@ section .ar {
 }
 
 section .al {
-  background-color: aquamarine;
-  color: black;
-  height: 100%;
+  background-color: $color2;
+  color: $color4;
+  height: $var1;
 }
 
 section .tituloayuda {
   text-align: center;
   font-size: 50px;
   text-decoration: underline;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
 }
 
 section .tituloayuda::selection {
-  color: red;
+  color: $color1;
 }
 
 section .parrafo1ayuda {
-  font-size: 20px;
+  font-size: $tamaño2;
   font-family: "Times New Roman", Times, serif;
-  color: black;
+  color: $color4;
 }
 
 section .parrafo1ayuda .listaayuda {
-  font-size: 20px;
+  font-size: $tamaño2;
   font-family: "Times New Roman", Times, serif;
-  color: black;
+  color: $color4;
   font-weight: 900;
 }
 
 $mapa: (
-  10px: red,
-  20px: blue,
-  30px: orange,
-  40px: darkgreen,
-  50px: black,
+  10px: $color1,
+  $tamaño2: $color3,
+  $tamaño5: orange,
+  $tamaño6: darkgreen,
+  50px: $color4,
 );
 
 @each $font, $color in $mapa {
   .btn--#{$font} {
-    background-color: aquamarine;
+    background-color: $color2;
     color: $color;
     font-size: $font;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     height: 70%;
-    width: 100%;
-    border: 8px solid black;
+    width: $var1;
+    border: 8px solid $color4;
     text-transform: uppercase;
   }
 }
 
 .footerayuda {
-  background-color: aquamarine;
-  color: black;
-  border: 12px solid black;
-  font-size: 20px;
+  background-color: $color2;
+  color: $color4;
+  border: $tamaño1 solid $color4;
+  font-size: $tamaño2;
   width: auto;
   height: auto;
-  border-radius: 12px;
+  border-radius: $tamaño1;
 }
 
 .footerayuda h3 {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerayuda h3::selection {
-  color: red;
+  color: $color1;
 }
 
 .footerayuda #instagramayuda,
@@ -1210,21 +1210,21 @@ $mapa: (
 }
 
 .footerayuda .titulo4ayuda {
-  color: black;
-  font-size: 26px;
+  color: $color4;
+  font-size: $tamaño3;
   font-style: normal;
   text-decoration: underline;
   font-weight: bolder;
-  text-shadow: 1px 1px 5px red;
+  text-shadow: 1px 1px 5px $color1;
   font-family: "Kanit", sans-serif;
   text-transform: capitalize;
 }
 
 .footerayuda .titulo4ayuda::selection {
-  color: red;
+  color: $color1;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 3$tamaño2) and (max-width: 768px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -1235,33 +1235,33 @@ $mapa: (
     height: 100vh;
   }
   .video1 {
-    border: 12px solid blue;
+    border: $tamaño1 solid $color3;
     padding: 0;
-    border-radius: 12px;
+    border-radius: $tamaño1;
     width: fit-content;
   }
   .video2 {
-    border: 12px solid blue;
+    border: $tamaño1 solid $color3;
     padding: 0;
-    border-radius: 12px;
+    border-radius: $tamaño1;
     width: fit-content;
   }
   .imagen1 {
-    border: 12px solid blue;
+    border: $tamaño1 solid $color3;
     padding: 0;
-    border-radius: 12px;
+    border-radius: $tamaño1;
     width: 300px;
   }
   .imagen2 {
-    border: 12px solid blue;
+    border: $tamaño1 solid $color3;
     padding: 0;
-    border-radius: 12px;
+    border-radius: $tamaño1;
     width: 300px;
   }
   .imagen3 {
-    border: 12px solid blue;
+    border: $tamaño1 solid $color3;
     padding: 0;
-    border-radius: 12px;
+    border-radius: $tamaño1;
     width: 300px;
   }
   .ubicacion {
@@ -1270,14 +1270,14 @@ $mapa: (
   .cajaservicios {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    width: 100%;
+    width: $var1;
   }
   .headerservicios {
     width: 150vh;
     height: auto;
   }
   .h2servicios {
-    width: 100%;
+    width: $var1;
     height: auto;
   }
   .parrafo1servicios {
