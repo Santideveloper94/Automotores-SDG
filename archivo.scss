@@ -26,12 +26,11 @@ $var2: 75%;
 $var3: 50%;
 $var4: 25%;
 
-$fuente1: 'Kanit', sans-serif;
-$fuente2: 'Times New Roman', Times, serif;
-$fuente3:  Arial, Helvetica, sans-serif;
-$fuente4: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-$fuente5:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+$fuente1: "Kanit", sans-serif;
+$fuente2: "Times New Roman", Times, serif;
+$fuente3: Arial, Helvetica, sans-serif;
+$fuente4: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$fuente5: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
 body {
   background-image: url(./multimedia/fondo.jpg);
@@ -987,37 +986,41 @@ main #beneficio4:hover {
   transition: all 2.7s;
 }
 
-.box{
-    background-color: $color2;
-    font-size: $tamaño2;
-    color: $color4;
-    text-align: center;
+.box {
+  background-color: $color2;
+  font-size: $tamaño2;
+  color: $color4;
+  text-align: center;
 }
 
-@mixin sizes($width, $height, $bcolor){
-    width: $width;
-    height: $height;
-    background-color: $bcolor;
+@mixin sizes($width, $height, $bcolor) {
+  width: $width;
+  height: $height;
+  background-color: $bcolor;
 }
-.box1{
-    @include sizes (80%, 80%, $color2);
-    border: $tamaño1 solid $color4;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+.box1 {
+  @include sizes(80%, 80%, $color2);
+  border: $tamaño1 solid $color4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.box2{
-    @include sizes (80%, 80%, $color2);
-    border: $tamaño1 solid $color4;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+.box2 {
+  @include sizes(80%, 80%, $color2);
+  border: $tamaño1 solid $color4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.box3{
-    @include sizes (80%, 80%, $color2);
-    border: $tamaño1 solid $color4;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+.box3 {
+  @include sizes(80%, 80%, $color2);
+  border: $tamaño1 solid $color4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.box4{
-    @include sizes (80%, 80%, $color2);
-    border: $tamaño1 solid $color4;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.box4 {
+  @include sizes(80%, 80%, $color2);
+  border: $tamaño1 solid $color4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 main .sec {
@@ -1156,9 +1159,9 @@ section .parrafo1ayuda .listaayuda {
 
 $mapa: (
   10px: $color1,
-  $tamaño2: $color3,
-  $tamaño5: orange,
-  $tamaño6: darkgreen,
+  20px: $color3,
+  30px: orange,
+  40px: darkgreen,
   50px: $color4,
 );
 
