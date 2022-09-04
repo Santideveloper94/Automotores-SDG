@@ -1243,7 +1243,7 @@ section .parrafo1ayuda .listaayuda {
   color: red;
 }
 
-@media only screen and (min-width: 320) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
