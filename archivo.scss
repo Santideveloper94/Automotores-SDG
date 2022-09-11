@@ -443,32 +443,35 @@ h1 {
 h1::selection {
   color: $color1;
 }
+div{
+  .carrouselhometitulo{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: $tamaño6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .carrouselhomeparrafo{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: $tamaño3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: $color3;
+    font-style: oblique;
+  }
+  .carrouselhomeparrafo::selection{
+    color: red;
+  }
 
-section div div .card-title {
-  text-align: left;
-  font-size: $tamaño2;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-decoration: underline;
-  text-transform: capitalize;
+  .carousel-indicators li{
+    height: 5vh;
+    width: 5vh;
+    border-radius: $var3;
+    border: 2px solid aqua;
+}
 }
 
-section div div .card-title::selection {
-  color: $color1;
-}
-
-section div div .card-text {
-  text-align: left;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-  font-weight: bold;
-  font-style: oblique;
-}
-
-section div div .card-text::selection {
-  color: $color1;
-}
 
 .footerhome {
   background-color: $color2;

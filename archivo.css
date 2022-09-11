@@ -420,30 +420,29 @@ h1::selection {
   color: red;
 }
 
-section div div .card-title {
-  text-align: left;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  text-decoration: underline;
+div .carrouselhometitulo {
+  text-align: center;
   text-transform: capitalize;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-section div div .card-title::selection {
-  color: red;
-}
-
-section div div .card-text {
-  text-align: left;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+div .carrouselhomeparrafo {
+  text-align: center;
   text-transform: capitalize;
-  font-weight: bold;
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: blue;
   font-style: oblique;
 }
-
-section div div .card-text::selection {
+div .carrouselhomeparrafo::selection {
   color: red;
+}
+div .carousel-indicators li {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  border: 2px solid aqua;
 }
 
 .footerhome {
