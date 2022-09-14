@@ -556,6 +556,18 @@ form {
   text-decoration-color: black;
   text-transform: capitalize;
 }
+form .tituloformulario {
+  color: rgb(252, 252, 252);
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 5px black;
+}
+form .formulario {
+  width: 50%;
+  height: 50%;
+}
 
 h3 {
   color: black;

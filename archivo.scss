@@ -583,6 +583,20 @@ form {
   font-weight: bold;
   text-decoration-color: $color4;
   text-transform: capitalize;
+
+  .tituloformulario{
+    color: rgb(252, 252, 252);
+    text-transform: capitalize;
+    font-size: $tamaño2;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px black;
+  }
+
+  .formulario{
+    width: $var3;
+    height: $var3;
+  }
 }
 
 h3 {
