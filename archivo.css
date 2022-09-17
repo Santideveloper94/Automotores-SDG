@@ -2,6 +2,8 @@
 @import url("./parciales/_beneficios.scss");
 @import url("./parciales/_contacto.scss");
 @import url("./parciales/_servicios.scss");
+@import url("./parciales/_ayuda.scss");
+@import url("./parciales/_home.scss");
 * {
   margin: 0;
   padding: 10px;
