@@ -221,14 +221,14 @@ main .item1 {
 }
 
 main .item2 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/audirojo.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item3 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/fiat.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
@@ -242,56 +242,56 @@ main .item4 {
 }
 
 main .item5 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/camionetabmw.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item6 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/ferraridecarrera.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item7 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/porsche911.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item8 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/rollsroyceblanco.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item9 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/volvo.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item10 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/mercedesblanco.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item11 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/maseratigranturismo.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
 }
 
 main .item12 {
-  background-image: url(./multimedia/audi.jpg);
+  background-image: url(./multimedia/mercedesazul.jpg);
   background-position: center;
   background-size: cover;
   width: 40vh !important;
@@ -1250,13 +1250,13 @@ $mapa: (
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .galeria {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    width: 200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
   }
   .item {
-    width: 100vh;
-    height: 100vh;
+    width: 20vh;
+    height: 20vh;
   }
   .video1 {
     border: $tamaño1 solid $color3;
