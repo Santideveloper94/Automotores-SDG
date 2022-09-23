@@ -536,7 +536,6 @@ h2 {
   color: black;
   font-size: 26px;
   font-style: normal;
-  text-decoration: underline;
   font-weight: bolder;
   text-align: left;
   text-shadow: 1px 1px 5px red;
@@ -552,7 +551,6 @@ form {
   font-size: 20px;
   font-family: "Kanit", sans-serif;
   text-shadow: 1px 1px 5px red;
-  text-decoration: underline;
   font-style: italic;
   font-weight: bold;
   text-decoration-color: black;
@@ -561,6 +559,7 @@ form {
 form .tituloformulario {
   color: rgb(252, 252, 252);
   text-transform: capitalize;
+  text-decoration: underline;
   font-size: 20px;
   font-weight: 900;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -569,6 +568,18 @@ form .tituloformulario {
 form .formulario {
   width: 50%;
   height: 50%;
+}
+form .cajaGral {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+}
+form .cajaForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
 h3 {
